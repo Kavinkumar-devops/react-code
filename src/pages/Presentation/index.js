@@ -32,12 +32,12 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 //import './styles.css'; // Import the CSS file
 // Image
-import bgImage1 from "assets/images/Drone3.jpg";
-import bgImage2 from "assets/images/Road1.jpg";
-import bgImage3 from "assets/images/Buildings1.jpg";
-import bgImage4 from "assets/images/land1.jpg";
-import bgImage5 from "assets/images/land2.jpg";
-import bgVideo from "assets/images/bg-presentation.mp4";
+import bgImage1 from "assets/image/BIM.jpg";
+import bgImage2 from "assets/image/drone_mapping2.png";
+import bgImage3 from "assets/image/photogramettry2.jpg";
+import bgImage4 from "assets/image/GIS4.jpeg";
+import bgImage5 from "assets/image/GIS1.png";
+import Posts from "pages/LandingPages/Author/sections/Posts";
 
 const contentArray = [
   "Experts in the analysis, mapping and distribution of geospatial information",
@@ -191,7 +191,8 @@ function Presentation() {
         }}
       >
         {/* <Counters /> */}
-        <DesignBlocks />
+        {/* <DesignBlocks /> */}
+        <Posts />
         {/* <Pages /> */}
         {/* <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
