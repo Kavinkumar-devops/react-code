@@ -1,10 +1,11 @@
 {
-  "name": "material-kit-2-react",
+  "homepage": "http://kavinkumar-devops.github.io/react-code/",
+  "name": "BNGeospatial",
   "version": "2.1.0",
   "private": true,
   "author": "D&M Works",
   "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of D&M by D&M Works",
+  "description": "BNGeospatial",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -40,8 +41,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src",
-    "prettify": "prettier --write ."
+    "predeploy": "npm run build",
+    "deploy": "gh-page -d deploy"
   },
   "eslintConfig": {
     "extends": [
