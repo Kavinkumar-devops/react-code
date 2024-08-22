@@ -43,7 +43,7 @@ function Places() {
               description="Building Information Modeling (BIM) is a holistic process that integrates multi-disciplinary data to create a digital representation of a building or infrastructure asset..."
               action={{
                 type: "internal",
-                route: "/sections/BIM/features",
+                route: "/sections/BIM2",
                 color: "info",
                 label: "read more",
               }}
