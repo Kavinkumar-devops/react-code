@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 /* eslint-disable no-param-reassign */
 // D&M React components
+=======
+/* eslint-disable no-param-reassign */// D&M React components
+>>>>>>> origin/main
 import MKBox from "components/MKBox";
 // D&M React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";

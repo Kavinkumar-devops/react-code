@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 // react-router components
 import { Link } from "react-router-dom";
 

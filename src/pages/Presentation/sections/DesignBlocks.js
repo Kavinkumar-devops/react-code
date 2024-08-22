@@ -55,20 +55,33 @@ function DesignBlocks() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
+<<<<<<< HEAD
           <MKBadge
+=======
+          {/* <MKBadge
+>>>>>>> origin/main
             variant="contained"
             color="info"
             badgeContent="Infinite combinations"
             container
             sx={{ mb: 2 }}
+<<<<<<< HEAD
           />
           <MKTypography variant="h2" fontWeight="bold">
+=======
+          /> */}
+          {/* <MKTypography variant="h2" fontWeight="bold">
+>>>>>>> origin/main
             Our Services
           </MKTypography>
           <MKTypography variant="body1" color="text">
             We have created multiple options for you to put together and customise into pixel
             perfect pages.
+<<<<<<< HEAD
           </MKTypography>
+=======
+          </MKTypography> */}
+>>>>>>> origin/main
         </Grid>
       </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>

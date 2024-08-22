@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
+=======
+>>>>>>> origin/main
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -9,6 +12,7 @@ import MKTypography from "components/MKTypography";
 import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 // Image
+<<<<<<< HEAD
 import post1 from "assets/f_images/BIM2.jpg";
 import post2 from "assets/f_images/ortho1.jpg";
 import post3 from "assets/f_images/Lider3.jpg";
@@ -20,6 +24,12 @@ import post8 from "assets/f_images/corridor.jpg";
 import post9 from "assets/f_images/dtm.jpg";
 import post10 from "assets/f_images/hydro.jpg";
 import post11 from "assets/f_images/planimetric.jpg";
+=======
+import post1 from "assets/images/examples/testimonial-6-2.jpg";
+import post2 from "assets/images/examples/testimonial-6-3.jpg";
+import post3 from "assets/images/examples/blog-9-4.jpg";
+import post4 from "assets/images/examples/blog2.jpg";
+>>>>>>> origin/main
 
 function Places() {
   return (
@@ -27,23 +37,35 @@ function Places() {
       <Container>
         <Grid container item xs={12} lg={6}>
           <MKTypography variant="h3" mb={6}>
+<<<<<<< HEAD
             Our Services
           </MKTypography>
         </Grid>
         <Grid container item xs={12} lg={6}>
           <MKTypography variant="h5" mb={6}>
             Best solutions in the best way
+=======
+            Check my latest blogposts
+>>>>>>> origin/main
           </MKTypography>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post1}
+<<<<<<< HEAD
               title="Building Information Modeling"
               description="Building Information Modeling (BIM) is a holistic process that integrates multi-disciplinary data to create a digital representation of a building or infrastructure asset..."
               action={{
                 type: "internal",
                 route: "/sections/BIM/features",
+=======
+              title="Rover raised $65 million"
+              description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+              action={{
+                type: "internal",
+                route: "/pages/blogs/author",
+>>>>>>> origin/main
                 color: "info",
                 label: "read more",
               }}
@@ -52,6 +74,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
+<<<<<<< HEAD
               title="Ortho Photo Services"
               description="At BN-Geospatial, we specialize in creating high-precision orthoimages through advanced orthorectification processes. Orthorectification is essential for correcting geometric distortions..."
               action={{
@@ -79,6 +102,9 @@ function Places() {
             <TransparentBlogCard
               image={post5}
               title="World Map"
+=======
+              title="MateLabs machine learning"
+>>>>>>> origin/main
               description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
               action={{
                 type: "internal",
@@ -90,9 +116,15 @@ function Places() {
           </Grid>
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
+<<<<<<< HEAD
               image={post6}
               title="Mobile Mapping"
               description="Mobile Mapping leverages cutting-edge digital technologies to streamline and enhance the mapping process, significantly reducing costs and logistical challenges. By integrating GPS..."
+=======
+              image={post3}
+              title="MateLabs machine learning"
+              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+>>>>>>> origin/main
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
@@ -102,6 +134,7 @@ function Places() {
             />
           </Grid>
           <Grid item xs={12} sm={6} lg={3}>
+<<<<<<< HEAD
             <TransparentBlogCard
               image={post7}
               title="Photogrammetry"
@@ -167,6 +200,8 @@ function Places() {
             />
           </Grid>
           {/* <Grid item xs={12} sm={6} lg={3}>
+=======
+>>>>>>> origin/main
             <BackgroundBlogCard
               image={post4}
               title="Flexible work hours"
@@ -177,7 +212,11 @@ function Places() {
                 label: "read more",
               }}
             />
+<<<<<<< HEAD
           </Grid> */}
+=======
+          </Grid>
+>>>>>>> origin/main
         </Grid>
       </Container>
     </MKBox>

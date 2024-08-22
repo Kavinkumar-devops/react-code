@@ -10,22 +10,41 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import bgImage1 from "assets/images/Drone3.jpg";
 
+<<<<<<< HEAD
 const description1 = `Our 3D Visualization Services enable architects and engineers to bring their designs to life with unparalleled detail and clarity. Utilizing advanced 3D architectural design and virtual tours, we help clients visualize their projects in a virtual environment, identifying potential design issues and optimizing the building's layout and features before construction begins. Our services set a new standard for presenting ideas, making a lasting impression and ensuring your designs are executed with precision.`;
 const description2 = `Architectural BIM is a digital platform that streamlines the planning, design, and execution of both commercial and residential construction projects. At BN-Geospatial, our architectural engineers use BIM for accurate and detailed architectural modeling, ensuring every element of the design is meticulously planned. Using tools like Revit, we create comprehensive information models that support seamless project execution and integration across all phases of construction`;
 const description3 = `Structural BIM focuses on the detailed modeling of a building's structural components, including foundations, walls, columns, beams, and roofing systems. Our structural BIM services ensure that every aspect of the building’s structure is accurately represented and integrated into the overall project model, providing a clear and coordinated view of the building's structural integrity from concept to completion.`;
 
+=======
+>>>>>>> origin/main
 function FeaturesOne() {
   return (
     <MKBox component="section" py={{ xs: 3, md: 12 }}>
       <Container>
         <Grid container alignItems="center">
           {/* prettier-ignore */}
+<<<<<<< HEAD
           <Grid >
           <Stack>
               <MKBox display="flex" alignItems="center" p={2}>
               <MKBox
                   width="2rem"
                   height="2rem"
+=======
+          <Grid item xs={12} lg={5}>
+          <MKBox display="flex" alignItems="center" p={2}>
+            <MKBox>
+              <img src={bgImage1} alt="Drone" style={{ maxWidth: "100%", height: "100%" }} />
+            </MKBox>
+          </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
+            <Stack>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+>>>>>>> origin/main
                   variant="gradient"
                   bgColor="info"
                   color="white"
@@ -37,6 +56,7 @@ function FeaturesOne() {
                 >
                   <Icon fontSize="small">mediation</Icon>
                 </MKBox>
+<<<<<<< HEAD
                 <MKTypography variant="body1" color="text" pl={2}>
                   3D Virtual Modeling & Visualization
                 </MKTypography>
@@ -64,6 +84,54 @@ function FeaturesOne() {
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKTypography variant="body2" color="text" pl={2}>
                   <p>{description3}</p>
+=======
+                <MKTypography variant="body2" color="text" pl={2}>
+                  It becomes harder for us to give others a hand.
+                  <br />
+                  We get our heart broken by people we love.
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <Icon fontSize="small">settings_overscan</Icon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+                  As we live, our hearts turn colder.
+                  <br />
+                  Cause pain is what we go through as we become older.
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <Icon fontSize="small">token</Icon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+                  When we lose family over time.
+                  <br />
+                  What else could rust the heart more over time? Blackgold.
+>>>>>>> origin/main
                 </MKTypography>
               </MKBox>
             </Stack>
