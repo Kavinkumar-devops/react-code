@@ -7,6 +7,11 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import Icon from "@mui/material/Icon";
+// Icon
+import DoubleArrowTwoToneIcon from '@mui/icons-material/DoubleArrowTwoTone';
+import StarIcon from '@mui/icons-material/Star';
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
+
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
@@ -38,7 +43,7 @@ function Information() {
             justifyContent="center"
             borderRadius="xl"
           >
-            <Icon fontSize="small">mediation</Icon>
+            <StarIcon fontSize="small">mediation</StarIcon>
           </MKBox>
           <MKTypography variant="body1" color="text" pl={2}>
           What is BIM?
@@ -47,7 +52,7 @@ function Information() {
       <Container>
         <MKBox display="flex" alignItems="center" p={2}>
           <MKBox>
-            <Icon fontSize="small">mediation</Icon>
+            <DoubleArrowTwoToneIcon fontSize="small"></DoubleArrowTwoToneIcon>
           </MKBox>
           <MKTypography variant="body1" color="text" pl={2}>
           Comprehensive Digital Representation
@@ -120,7 +125,7 @@ function Information() {
             justifyContent="center"
             borderRadius="xl"
           >
-            <Icon fontSize="small">mediation</Icon>
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
           <MKTypography variant="body1" color="text" pl={2}>
           Our BIM Services (3D Virtual Modeling & Visualization)
