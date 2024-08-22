@@ -1,4 +1,5 @@
-/* eslint-disable no-param-reassign */// D&M React components
+/* eslint-disable no-param-reassign */
+// D&M React components
 import MKBox from "components/MKBox";
 // D&M React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
