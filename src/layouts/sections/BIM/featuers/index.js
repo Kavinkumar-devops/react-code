@@ -21,9 +21,9 @@ function Features() {
         { label: "Mapping" },
       ]}
     >
-      <View title="Images">
+      {/* <View title="Images">
         <FeaturesOne />
-      </View>
+      </View> */}
       <View title="Title 2" >
         <FeaturesTwo />
       </View>

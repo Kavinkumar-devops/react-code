@@ -18,6 +18,7 @@ import Features2 from "layouts/sections/photogrammetry/featuers";
 import Features3 from "layouts/sections/BIM/featuers";
 import Features4 from "layouts/sections/mapping/featuers";
 import Features5 from "layouts/sections/modeling/featuers";
+import Features6 from "layouts/sections/BIM2";
 import Navbars from "layouts/sections/navigation/navbars";
 import NavTabs from "layouts/sections/navigation/nav-tabs";
 import Pagination from "layouts/sections/navigation/pagination";
@@ -48,10 +49,15 @@ const routes = [
     name: "Services",
     icon: <Icon>view_day</Icon>,
     collapse: [
+      // {
+      //   name: "BIM",
+      //   route: "/sections/BIM/features",
+      //   component: <Features3 />,
+      // },
       {
         name: "BIM",
-        route: "/sections/BIM/features",
-        component: <Features3 />,
+        route: "/sections/BIM2",
+        component: <Features6 />,
       },
       {
         name: "Orthophoto",

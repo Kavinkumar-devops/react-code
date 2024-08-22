@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
-// prettier-ignore
+/* eslint-disable prettier/prettier */
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
-import Stack from "@mui/material/Stack";
-// D&M React components
+import React from "react";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import Icon from "@mui/material/Icon";
 import bgImage1 from "assets/images/Drone3.jpg";
 
 const description1 = `Building Information Modeling (BIM) is at the forefront of digital transformation in the architecture, engineering, and construction (AEC) industry. At BN-Geospatial, we leverage BIM to revolutionize how projects are designed, built, and managed. Our BIM services provide a comprehensive approach to creating, managing, and visualizing built assets throughout their lifecycle, ensuring better outcomes for both businesses and the built environment.`;
@@ -19,11 +19,15 @@ function FeaturesOne() {
     <MKBox component="section" py={{ xs: 3, md: 12 }}>
       <Container>
         <Grid container alignItems="center">
-          {/* prettier-ignore */}
-          <Grid >
-          <Stack>
+          <Grid item xs={12}>
+            <Stack
+              sx={{
+                overflow: "visible", // Ensures the stack expands with its content
+                flexWrap: "nowrap",  // Prevents wrapping and scrolling
+              }}
+            >
               <MKBox display="flex" alignItems="center" p={2}>
-              <MKBox
+                <MKBox
                   width="2rem"
                   height="2rem"
                   variant="gradient"
