@@ -24,21 +24,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Hello
                     <br />
                     BN-Geospatial
                   </>
                 }
-                description="We can help on the complex works."
+                description="Achieving Precision and Quality in Every Project"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Explore Services"
-                description="We will provide the best solution, with our best experts in the field"
+                title="Partner with BN-GeoSpacial"
+                description="Let's Create the Future Together"
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "Hello Every One  :)",
+                  route: "/pages/landing-pages/contact-us",
+                  label: "Contact Us :)",
                 }}
               />
             </RotatingCard>
@@ -48,15 +48,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Photogrammetry"
-                  description="High-precision 3D data extraction from photographs."
+                  title="Vision"
+                  description="To be a global leader in geospatial services, driving innovation and setting new standards for accuracy and efficiency.."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="Orthophoto"
-                  description="Geometrically corrected aerial images."
+                  title="Mission"
+                  description="To empower industries with precise, data-driven geospatial solutions, enabling smarter decision-making and sustainable growth."
                 />
               </Grid>
             </Grid>
@@ -64,31 +64,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="LiDAR"
-                  description="Light Detection and Ranging for precise mapping."
+                  title="Values"
+                  description="Integrity, Innovation, and Excellence are at the core of everything we do, guiding our commitment to our clients and the community."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Mapping"
-                  description="Detailed and accurate map creation."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="3D Modeling"
-                  description="Creating three-dimensional representations of physical objects."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="BIM (Building Information Model)"
-                  description="3D modeling for building design and management."
+                  title="Quality Control"
+                  description="A high level of quality control is maintained across all our operations, ensuring compliance with both national and international standards."
                 />
               </Grid>
             </Grid>
