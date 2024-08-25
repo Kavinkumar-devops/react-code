@@ -11,7 +11,7 @@ import MKSocialButton from "components/MKSocialButton";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
-
+import FeaturesOne from "pages/Presentation/sections/Readmore"
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
@@ -32,22 +32,30 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 //import './styles.css'; // Import the CSS file
 // Image
-import bgImage1 from "assets/image/BIM.jpg";
-import bgImage2 from "assets/image/drone_mapping2.png";
+import bgImage1 from "assets/image/BIM3.jpg";
+import bgImage2 from "assets/image/drone_mapping3.png";
 import bgImage3 from "assets/image/photogramettry2.jpg";
-import bgImage4 from "assets/image/GIS4.jpeg";
-import bgImage5 from "assets/image/GIS1.png";
+// import bgImage4 from "assets/image/GIS4.jpeg";
+// import bgImage5 from "assets/image/GIS1.png";
 import Posts from "pages/LandingPages/Author/sections/Posts";
+import { keyframes } from "@mui/system";
 
+// Define the keyframes for sliding the background from right to left
+const slideBackground = keyframes`
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+`;
 const contentArray = [
   "Experts in the analysis, mapping and distribution of geospatial information",
   "Leading provider of spatial data and solutions",
   "Innovative mapping technologies for modern challenges",
-  "Worth of the solutions",
-  "having mapping technologies for modern challenges",
 ];
 
-const imageArray = [bgImage1, bgImage2, bgImage3,bgImage4,bgImage5];
+const imageArray = [bgImage1, bgImage2, bgImage3];
 
 function Presentation() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,20 +69,20 @@ function Presentation() {
 
   const startSlideInterval = () => {
     slideInterval.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % contentArray.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
     }, 5000);
   };
 
   const handleNext = () => {
     clearSlideInterval();
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % contentArray.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
     startSlideInterval();
   };
 
   const handlePrev = () => {
     clearSlideInterval();
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? contentArray.length - 1 : prevIndex - 1
+      prevIndex === 0 ? imageArray.length - 1 : prevIndex - 1
     );
     startSlideInterval();
   };
@@ -103,29 +111,15 @@ function Presentation() {
         sx={{
           backgroundImage: `url(${imageArray[currentIndex]})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center", // Centered background position
           display: "grid",
           placeItems: "center",
-          transition: "background-image 1s ease-in-out", // Smooth transition for the background image
-          animation: "slide-background 15s infinite",
+          transition: "none", // Smooth transition for the background image
+          animation: `${slideBackground} 1s ease-in-out`, // Optional fade-in effect
         }}
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            {/* <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              BN-Geospatial{" "}
-            </MKTypography> */}
-      {/* Separate Container for Text Content */}
       <Container
         sx={{
           backgroundColor: "rgba(0, 0, 0, 0.6)", // Semi-transparent dark background
@@ -242,8 +236,9 @@ function Presentation() {
           </Grid>
         </Container> */}
         <Information />
-        <Testimonials />
-        {/* <Download /> */}
+        {/* <Testimonials /> */}
+        <Download />
+        <FeaturesOne/>
         {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>

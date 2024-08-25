@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -20,19 +21,33 @@ import post8 from "assets/f_images/corridor.jpg";
 import post9 from "assets/f_images/dtm.jpg";
 import post10 from "assets/f_images/hydro.jpg";
 import post11 from "assets/f_images/planimetric.jpg";
-
+import MKBadge from "components/MKBadge";
+const description1 = `BN-GeoSpacial specializes in delivering cutting-edge Geospatial, Engineering, and BIM solutions with a team of highly skilled professionals and industry experts.`;
 function Places() {
   return (
     <MKBox component="section" py={2}>
       <Container>
-        <Grid container item xs={12} lg={6}>
-          <MKTypography variant="h3" mb={6}>
+        <Grid
+          container
+          item
+          xs={12}
+          lg={6}
+          flexDirection="column"
+          alignItems="center"
+          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
+        >
+          <MKBadge
+            variant="contained"
+            color="info"
+            badgeContent="Precision in Every Dimension"
+            container
+            sx={{ mb: 2 }}
+          />
+          <MKTypography variant="h2" fontWeight="bold">
             Our Services
           </MKTypography>
-        </Grid>
-        <Grid container item xs={12} lg={6}>
-          <MKTypography variant="h5" mb={6}>
-            Best solutions in the best way
+          <MKTypography variant="body1" color="text">
+            {description1}
           </MKTypography>
         </Grid>
         <Grid container spacing={3}>

@@ -24,17 +24,17 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Hello
+                    Precision
                     <br />
-                    BN-Geospatial
+                    Quality in Projects
                   </>
                 }
-                description="Achieving Precision and Quality in Every Project"
+                description="Our advanced geospatial expertise guarantees top-quality service, delivering innovative solutions that meet all standards."
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Partner with BN-GeoSpacial"
-                description="Let's Create the Future Together"
+                title="Partner with Us"
+                description="Reach out to us today to discuss how we can support your project with our cutting-edge geospatial solutions."
                 action={{
                   type: "internal",
                   route: "/pages/landing-pages/contact-us",

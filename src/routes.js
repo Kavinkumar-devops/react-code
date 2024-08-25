@@ -76,7 +76,7 @@ const routes = [
       },
       {
         name: "Mobile Mapping",
-        route: "/sections/page-sections/features",
+        route: "/sections/mapping/features",
         component: <Features4 />,
       },
       {
