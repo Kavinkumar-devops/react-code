@@ -75,8 +75,8 @@ export default {
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} D&M by{" "}
-      <MKTypography
+      © 2024 BN-GeoSpacial  Private Limited.
+      {/* <MKTypography
         component="a"
         href="#"
         target="_blank"
@@ -84,9 +84,9 @@ export default {
         variant="button"
         fontWeight="regular"
       >
-        D&M Works
-      </MKTypography>
-      .
+        BN-GeoSpacial 
+      </MKTypography> */}
+      
     </MKTypography>
   ),
 };
