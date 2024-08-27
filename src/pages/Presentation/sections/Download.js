@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -33,27 +34,33 @@ function Download() {
         />
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
           <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
-            <MKTypography variant="h3" color="white">
-              Do you love this awesome
+          <Grid>
+          <MKTypography variant="h3" color="white">
+            Looking for expert Geospatial Solutions
+          </MKTypography>
+          </Grid>
+          <Grid>
+          <MKTypography variant="h3" color="white" mb={1}>
+            for Innovative and Precise Results?
+          </MKTypography>
+          </Grid>
+            <MKTypography variant="body2" color="white" mb={6}>
+              Connect with BN-GeoSpacial to transform your projects with precision and innovation. Our team is ready to provide tailored solutions that meet your unique needs.
             </MKTypography>
-            <MKTypography variant="h3" color="white" mb={1}>
-              UI Kit for ReactJS &amp; MUI?
-            </MKTypography>
-            {/* <MKTypography variant="body2" color="white" mb={6}>1</MKTypography> */}
             <MKButton
               variant="gradient"
               color="info"
               size="large"
               component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
+              href=""
               sx={{ mb: 2 }}
             >
-              Download Now
+              Connect with US
             </MKButton>
           </Grid>
         </Container>
       </MKBox>
-      <Container>
+      {/* <Container>
         <Grid container item xs={6} mx="auto">
           <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
@@ -161,7 +168,7 @@ function Download() {
             </Grid>
           </MKBox>
         </Grid>
-      </Container>
+      </Container> */}
     </MKBox>
   );
 }

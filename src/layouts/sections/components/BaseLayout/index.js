@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-unused-vars */
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -42,9 +44,9 @@ function BaseLayout({ breadcrumb, title, children }) {
           {children}
         </Grid>
       </Container>
-      <MKBox mt="auto">
+      {/* <MKBox mt="auto">
         <CenteredFooter />
-      </MKBox>
+      </MKBox> */}
     </MKBox>
   );
 }

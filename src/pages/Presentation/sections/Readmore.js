@@ -1,28 +1,16 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Stack from "@mui/material/Stack";
+import { Link } from 'react-router-dom';
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
+const discription1 =`BN-GeoSpacial, a premier consulting firm, specializes in Geospatial, Engineering, and BIM solutions for the Infrastructure, GIS, Civil (AEC), Urban Planning, Utility, and Geomatics sectors. Our team of experts  with experience, has successfully contributed to some of the world's most demanding projects...`;
 function FeaturesOne() {
   return (
     <MKBox component="section" py={{ xs: 3, md: 12 }}>
@@ -33,13 +21,11 @@ function FeaturesOne() {
               Read More About Us
             </MKTypography>
             <MKTypography variant="body2" color="text" mb={2}>
-              Pain is what we go through as we become older. We get insulted by others, lose trust
-              for those others. We get back stabbed by friends. It becomes harder for us to give
-              others a hand.
+              {discription1}
             </MKTypography>
+            <Link to="/pages/landing-pages/about-us" style={{ textDecoration: 'none' }}>
             <MKTypography
-              component="a"
-              href="#"
+              component="About"
               variant="body2"
               color="info"
               fontWeight="regular"
@@ -62,6 +48,7 @@ function FeaturesOne() {
               More about us
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
             </MKTypography>
+            </Link>
           </Grid>
           <Grid item xs={12} lg={6} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
             <Stack>
@@ -81,9 +68,9 @@ function FeaturesOne() {
                   <Icon fontSize="small">mediation</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  It becomes harder for us to give others a hand.
+                  Expertise in delivering tailored solutions for complex
                   <br />
-                  We get our heart broken by people we love.
+                  geospatial challenges across diverse industries.
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -102,9 +89,9 @@ function FeaturesOne() {
                   <Icon fontSize="small">settings_overscan</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  As we live, our hearts turn colder.
+                  Committed to innovation, precision, and quality, driving
                   <br />
-                  Cause pain is what we go through as we become older.
+                  progress in every project we undertake.
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -123,9 +110,9 @@ function FeaturesOne() {
                   <Icon fontSize="small">token</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  When we lose family over time.
+                  Trusted by global leaders for our exceptional service
                   <br />
-                  What else could rust the heart more over time? Blackgold.
+                  and unmatched technical expertise.
                 </MKTypography>
               </MKBox>
             </Stack>

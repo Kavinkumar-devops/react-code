@@ -15,7 +15,7 @@ import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-const description1 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building Information Modeling (BIM) integrates multi-disciplinary data to create a holistic digital model of a building or infrastructure asset, covering every phase from design to operation.`;
+const description1 = `Building Information Modeling (BIM) integrates multi-disciplinary data to create a holistic digital model of a building or infrastructure asset, covering every phase from design to operation.`;
 const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered by intelligent models and cloud-based platforms, BIM facilitates collaboration across all stakeholders, ensuring seamless communication and decision-making throughout the project lifecycle.`;
 const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM supports the entire lifecycle of a built asset, from initial planning and design through construction, maintenance, and eventual decommissioning, ensuring the project remains aligned with its objectives.`;
 const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By providing a centralized repository of all project-related data, BIM allows for informed decision-making, minimizing errors and optimizing resource allocation.`;
