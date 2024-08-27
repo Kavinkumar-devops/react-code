@@ -192,7 +192,7 @@ export default {
             <>
             <MKTypography
               display="flex"
-              alignItems="center"
+              // alignItems="center"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
@@ -223,13 +223,13 @@ export default {
       name: "Connect with Us",
       items: [
         { 
-          name: <><PhoneIcon sx={{ mr: 2 }} />6362641656</> 
+          name: <><PhoneIcon sx={{ mr: 1 }} />6362641656</> 
         },
         { 
-          name: <><WhatsAppIcon sx={{ mr: 2 }} />6362641656</>
+          name: <><WhatsAppIcon sx={{ mr: 1 }} />6362641656</>
         },
         { 
-          name: <><EmailIcon sx={{ mr: 2 }} />info@bngeospacial.com</>
+          name: <><EmailIcon sx={{ mr: 1 }} />info@bngeospacial.com</>
         },
       ],
     },

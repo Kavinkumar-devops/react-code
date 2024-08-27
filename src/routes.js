@@ -11,14 +11,13 @@ import ContactUs from "layouts/pages/landing-pages/contact-us";
 //import Author from "layouts/pages/landing-pages/author";
 
 // Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
-import Features1 from "layouts/sections/orthophoto/featuers";
-import Features2 from "layouts/sections/photogrammetry/featuers";
-import Features3 from "layouts/sections/BIM/featuers";
-import Features4 from "layouts/sections/mapping/featuers";
-import Features5 from "layouts/sections/modeling/featuers";
-import Features6 from "layouts/sections/BIM2";
+
+import Features1 from "pages/Services/GIS";
+import Features2 from "pages/Services/BIM";
+import Features3 from "pages/Services/Lidar";
+import Features4 from "pages/Services/MobileMapping";
+import Features5 from "pages/Services/OrthoPhoto";
+import Features6 from "pages/Services/Photogrammetry";
 import Navbars from "layouts/sections/navigation/navbars";
 import NavTabs from "layouts/sections/navigation/nav-tabs";
 import Pagination from "layouts/sections/navigation/pagination";
@@ -49,30 +48,25 @@ const routes = [
     name: "Services",
     icon: <Icon>view_day</Icon>,
     collapse: [
-      // {
-      //   name: "BIM",
-      //   route: "/sections/BIM/features",
-      //   component: <Features3 />,
-      // },
       {
         name: "BIM",
-        route: "/sections/BIM2",
-        component: <Features6 />,
+        route: "/sections/BIM",
+        component: <Features2 />,
       },
       {
         name: "Orthophoto",
         route: "/sections/orthophoto/features",
-        component: <Features1 />,
+        component: <Features5 />,
       },
       {
         name: "Lidar",
         route: "/sections/page-sections/features",
-        component: <Features />,
+        component: <Features3 />,
       },
       {
         name: "WORLD MAP",
         route: "/sections/BIM/features",
-        component: <Features3 />,
+        component: <Features1 />,
       },
       {
         name: "Mobile Mapping",
@@ -87,22 +81,22 @@ const routes = [
           {
             name: "CORRIDOR MAPPING",
             route: "/sections/BIM/features",
-            component: <Features />,
+            component: <Features6 />,
           },
           {
             name: "DTM MAPPING",
             route: "/sections/BIM/features",
-            component: <Features />,
+            component: <Features6 />,
           },
           {
             name: "HYDRO",
             route: "/sections/BIM/features",
-            component: <Features />,
+            component: <Features6 />,
           },
           {
             name: "PLANIMETRIC",
             route: "/sections/BIM/features",
-            component: <Features />,
+            component: <Features6 />,
           },
         ],
       },
