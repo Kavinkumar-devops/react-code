@@ -122,7 +122,7 @@ function Presentation() {
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
       <Container
         sx={{
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Semi-transparent dark background
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent dark background
           borderRadius: "8px", // Rounded corners
           padding: "24px", // Padding around the content
           marginTop: "16px", // Space between the title and content
