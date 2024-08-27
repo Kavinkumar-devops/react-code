@@ -114,7 +114,7 @@ function Presentation() {
           backgroundPosition: "center", // Centered background position
           display: "grid",
           placeItems: "center",
-          transition: "none", // Smooth transition for the background image
+          transition: "background-image 1s ease-in-out", // Smooth transition for the background image
           animation: `${slideBackground} 1s ease-in-out`, // Optional fade-in effect
         }}
       >
