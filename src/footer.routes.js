@@ -216,7 +216,7 @@ export default {
             </>
           ),
         },
-        { name: "SEE ON MAP", href: "https://www.google.com/maps?q=12.956389,77.527500",style:"color: 'blue', textDecoration: 'underline'" },
+        { name: "Locate Us on Map", href: "https://www.google.com/maps?q=12.956389,77.527500",style:"color: 'blue', textDecoration: 'underline'" },
       ],
     },
     {

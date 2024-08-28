@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable prettier/prettier */
 // @mui material components
 import Grid from "@mui/material/Grid";
 // D&M React components
@@ -20,11 +18,10 @@ import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 function ContactUs() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        sticky
-      />
       <MKBox position="fixed" top="0.5rem" width="100%">
+        <DefaultNavbar
+          routes={routes}
+        />
       </MKBox>
       <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>

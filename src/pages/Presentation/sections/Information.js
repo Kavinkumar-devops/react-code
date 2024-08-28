@@ -14,10 +14,10 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
-      <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+    <MKBox component="section" py={0} my={3}>
+      <Container maxWidth="lg">
+        <Grid container spacing={3} alignItems="center">
+          <Grid item xs={12} lg={4.9} sx={{ pr: { lg: 20 } }}>
             <RotatingCard>
               <RotatingCardFront
                 image={bgFront}
@@ -43,7 +43,7 @@ function Information() {
               />
             </RotatingCard>
           </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+          <Grid item xs={12} lg={7}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard

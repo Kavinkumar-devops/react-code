@@ -13,7 +13,7 @@ import MKTypography from "components/MKTypography";
 const discription1 =`BN-GeoSpacial, a premier consulting firm, specializes in Geospatial, Engineering, and BIM solutions for the Infrastructure, GIS, Civil (AEC), Urban Planning, Utility, and Geomatics sectors. Our team of experts  with experience, has successfully contributed to some of the world's most demanding projects...`;
 function FeaturesOne() {
   return (
-    <MKBox component="section" py={{ xs: 3, md: 12 }}>
+    <MKBox component="section" py={{ xs: 6, md: 6 }}>
       <Container>
         <Grid container alignItems="center">
           <Grid item xs={12} lg={5}>
@@ -50,7 +50,7 @@ function FeaturesOne() {
             </MKTypography>
             </Link>
           </Grid>
-          <Grid item xs={12} lg={6} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
+          <Grid item xs={12} lg={5} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
             <Stack>
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKBox

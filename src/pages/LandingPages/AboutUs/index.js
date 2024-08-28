@@ -35,8 +35,9 @@ function AboutUs() {
         //   label: "free download",
         //   color: "default",
         // }}
-        transparent
-        light
+        // transparent
+        // light
+        sticky
       />
       <MKBox
         minHeight="75vh"

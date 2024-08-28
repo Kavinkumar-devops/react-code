@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 // @mui material components
 import Icon from "@mui/material/Icon";
 
@@ -10,6 +11,16 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 //import Author from "layouts/pages/landing-pages/author";
 
+import RoofingIcon from '@mui/icons-material/Roofing';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import InfoIcon from '@mui/icons-material/Info';
+import { FcAbout } from "react-icons/fc";
+import { MdOutlineContactSupport } from "react-icons/md";
+import { GrContact } from "react-icons/gr";
+import { MdOutlineConnectWithoutContact } from "react-icons/md";
+import { MdOutlineContactMail } from "react-icons/md";
 // Sections
 
 import Features1 from "pages/Services/GIS";
@@ -35,10 +46,11 @@ import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
 import Presentation from "layouts/pages/presentation";
+
 const routes = [
   {
     name: "Home",
-    icon: <Icon>dashboard</Icon>,
+    icon: <RoofingIcon fontSize="medium" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/",
     component: <Presentation />,
     columns: 1,
@@ -46,7 +58,7 @@ const routes = [
   },
   {
     name: "Services",
-    icon: <Icon>view_day</Icon>,
+    icon: <ProductionQuantityLimitsIcon fontSize="medium" sx={{ fontWeight: 'bold' }} color="black"/>,
     collapse: [
       {
         name: "BIM",
@@ -212,15 +224,15 @@ const routes = [
   },
   {
     name: "About Us",
-    icon: <Icon>dashboard</Icon>,
+    icon: <MdOutlineContactSupport size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/about-us",
-    component: <AboutUs />,
+    component: <AboutUs fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
     columns: 1,
     rowsPerColumn: 2,
   },
   {
     name: "Contact Us",
-    icon: <Icon>article</Icon>,
+    icon: <MdOutlineConnectWithoutContact size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/contact-us",
     component: <ContactUs />,
     columns: 1,

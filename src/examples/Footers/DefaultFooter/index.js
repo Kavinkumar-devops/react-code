@@ -75,7 +75,6 @@ function DefaultFooter({ content }) {
                         to={route}
                         variant="button"
                         fontWeight="regular"
-                        textTransform="capitalize"
                       >
                         {name}
                       </MKTypography>

@@ -1,4 +1,6 @@
 /* eslint-disable no-param-reassign */
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { Fragment, useState, useEffect } from "react";
 
 // react-router components
@@ -440,7 +442,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         mx={relative ? 0 : 3}
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
-        shadow={transparent ? "none" : "md"}
+        // shadow={transparent ? "none" : "md"}
         color={light ? "white" : "dark"}
         position={relative ? "relative" : "absolute"}
         left={0}
@@ -448,6 +450,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         sx={({ palette: { transparent: transparentColor, white }, functions: { rgba } }) => ({
           backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0.8),
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
+          boxShadow: transparent ? 'none' : '0px 5px 15px rgba(52, 71, 103, 1)' // violet shadow
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">

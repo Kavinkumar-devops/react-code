@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 /* eslint-disable prettier/prettier */
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -11,7 +12,8 @@ import MKSocialButton from "components/MKSocialButton";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
-import FeaturesOne from "pages/Presentation/sections/Readmore"
+import ReadMore from "pages/Presentation/sections/Readmore"
+import Newsletter from "./sections/ContactUs/Newsletter";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
@@ -50,9 +52,9 @@ const slideBackground = keyframes`
   }
 `;
 const contentArray = [
-  "Experts in the analysis, mapping and distribution of geospatial information",
-  "Leading provider of spatial data and solutions",
-  "Innovative mapping technologies for modern challenges",
+  "Scan to BIM - As built model - BIM services",
+  "3D Modelling - Planimetric Mapping",
+  "DTM Mapping - Corridor Mapping - Hydro Mapping",
 ];
 
 const imageArray = [bgImage1, bgImage2, bgImage3];
@@ -97,12 +99,8 @@ function Presentation() {
     <>
       <DefaultNavbar
         routes={routes}
-        // action={{
-        //   type: "external",
-        //   route: "https://www.creative-tim.com/product/material-kit-react",
-        //   label: "free download",
-        //   color: "info",
-        // }}
+        // transparent
+        // dark
         sticky
       />
       <MKBox
@@ -237,8 +235,9 @@ function Presentation() {
         </Container> */}
         <Information />
         {/* <Testimonials /> */}
-        <Download />
-        <FeaturesOne/>
+        {/* <Download /> */}
+        <ReadMore/>
+        <Newsletter />
         {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>

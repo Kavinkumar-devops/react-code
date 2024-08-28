@@ -10,7 +10,7 @@ export default {
   },
 
   text: {
-    main: "#7b809a",
+    main: "#1c2344",
     focus: "#7b809a",
   },
 
@@ -65,13 +65,13 @@ export default {
   },
 
   dark: {
-    main: "#344767",
+    main: "#000000",
     focus: "#2c3c58",
   },
 
   grey: {
     100: "#f8f9fa",
-    200: "#f0f2f5",
+    200: "#76aef7",
     300: "#dee2e6",
     400: "#ced4da",
     500: "#adb5bd",
