@@ -87,7 +87,7 @@ const routes = [
       },
       {
         name: "Photogrammetry",
-        description: "Options",
+        // description: "Options",
         dropdown: true,
         collapse: [
           {
