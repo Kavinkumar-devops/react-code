@@ -1,5 +1,4 @@
 {
-  "homepage": "http://kavinkumar-devops.github.io/react-code/",
   "name": "material-kit-2-react",
   "version": "2.1.0",
   "private": true,
@@ -43,8 +42,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "prettify": "prettier --write ."
   },
   "eslintConfig": {
