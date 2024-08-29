@@ -47,8 +47,8 @@ function AboutUs() {
         <BaseLayout
       // title="Design & Build with BIM"
       breadcrumb={[
-        { label: "Geospatial & Remote Sensing", route: "/sections/BIM2/features" },
-        { label: "BIM" },
+        { label: "Geospatial", route: "/sections/mapping/features" },
+        { label: "Mobile Mapping" },
       ]}
     >
     <MKBox
@@ -86,11 +86,10 @@ function AboutUs() {
               },
             })}
           >
-            Design & Build with BIM
+            Mobile Mapping
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-            have the opportunity to play this game
+          Real-Time Data Collection-Mobile Mapping Custom Mapping -GIS Integration
           </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading

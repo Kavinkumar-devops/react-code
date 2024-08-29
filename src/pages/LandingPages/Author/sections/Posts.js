@@ -181,18 +181,6 @@ function Places() {
               }}
             />
           </Grid>
-          {/* <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
-              image={post4}
-              title="Flexible work hours"
-              description="Rather than worrying about switching offices every couple years, you stay in the same place."
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                label: "read more",
-              }}
-            />
-          </Grid> */}
         </Grid>
       </Container>
     </MKBox>

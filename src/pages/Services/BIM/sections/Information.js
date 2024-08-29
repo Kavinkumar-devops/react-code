@@ -12,107 +12,87 @@ import DoubleArrowTwoToneIcon from '@mui/icons-material/DoubleArrowTwoTone';
 import StarIcon from '@mui/icons-material/Star';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 
+import TransparentBlogCard from "./TransparentBlogCard/index";
+// Image
+import post1 from "assets/image/mobile_mapping.png";
+import post2 from "assets/image/mobile_mapping.jpg";
+import post3 from "assets/image/mm1.jpeg";
+import post4 from "assets/f_images/mobilemapping.PNG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-const description1 = `Building Information Modeling (BIM) integrates multi-disciplinary data to create a holistic digital model of a building or infrastructure asset, covering every phase from design to operation.`;
-const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered by intelligent models and cloud-based platforms, BIM facilitates collaboration across all stakeholders, ensuring seamless communication and decision-making throughout the project lifecycle.`;
-const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM supports the entire lifecycle of a built asset, from initial planning and design through construction, maintenance, and eventual decommissioning, ensuring the project remains aligned with its objectives.`;
-const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By providing a centralized repository of all project-related data, BIM allows for informed decision-making, minimizing errors and optimizing resource allocation.`;
-const description5 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our 3D Visualization Services allow architects and engineers to create detailed and lifelike representations of their designs, enhancing understanding and stakeholder buy-in.`;
-const description6 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtual tours and 3D architectural design help identify potential design issues early, allowing for layout and feature optimization before construction begins.`;
-const description7 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High-quality 3D models set a new standard for presenting design concepts, ensuring that ideas are communicated effectively and executed with precision.`;
-const description8 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clients can interact with virtual models, exploring different design options and making adjustments in real-time, leading to better design outcomes.`;
-const description9 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our architectural BIM services provide detailed modeling for both commercial and residential projects, ensuring every design element is meticulously planned.`;
-const description10 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using platforms like Revit, we create comprehensive information models that support smooth integration and execution across all construction phases.`;
-const description11 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM streamlines the architectural planning process, enabling detailed and accurate modeling that aligns with the project’s vision.`;
+const description1 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building Information Modeling (BIM) is at the forefront of digital transformation in the architecture, engineering, and construction (AEC) industry. At BN-Geospatial, we leverage BIM to revolutionize how projects are designed, built, and managed. Our BIM services provide a comprehensive approach to creating, managing, and visualizing built assets throughout their lifecycle, ensuring better outcomes for both businesses and the built environment.`;
+const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building Information Modeling (BIM) is a holistic process that integrates multi-disciplinary data to create a digital representation of a building or infrastructure asset. Powered by an intelligent model and cloud-based platform, BIM facilitates the planning, design, construction, and operation of a built asset, enhancing collaboration and decision-making across the project lifecycle.`;
+const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our 3D Visualization Services enable architects and engineers to bring their designs to life with unparalleled detail and clarity. Utilizing advanced 3D architectural design and virtual tours, we help clients visualize their projects in a virtual environment, identifying potential design issues and optimizing the building's layout and features before construction begins. Our services set a new standard for presenting ideas, making a lasting impression and ensuring your designs are executed with precision`;
+const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural BIM is a digital platform that streamlines the planning, design, and execution of both commercial and residential construction projects. At BN-Geospatial, our architectural engineers use BIM for accurate and detailed architectural modeling, ensuring every element of the design is meticulously planned. Using tools like Revit, we create comprehensive information models that support seamless project execution and integration across all phases of construction.`;
+const description5 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Structural BIM focuses on the detailed modeling of a building's structural components, including foundations, walls, columns, beams, and roofing systems. Our structural BIM services ensure that every aspect of the building’s structure is accurately represented and integrated into the overall project model, providing a clear and coordinated view of the building's structural integrity from concept to completion.`;
+const description6 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEP BIM (Mechanical, Electrical, and Plumbing) is a collaborative process that allows engineers to create and manage digital representations of a building’s MEP systems. By integrating MEP elements into the BIM model, we ensure that these critical systems are coordinated with the architectural and structural components, reducing conflicts and improving the overall efficiency of the construction process.`;
+const description7 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Façade BIM Services are designed to help architects, design engineers, and construction firms visualize and assess the building's façade in real-time. We develop detailed 2D and 3D drawings, creating BIM models that accurately represent prefabricated metal, wooden, and glass façades. These models allow for early design modifications and ensure the safety, fabrication, and installation of façades across various building types, including hotels, skyscrapers, resorts, and commercial complexes.`;
+const description8 = `&nbsp;&nbsp;Partnering with architectural design firms to develop detailed BIM models for facade designs.`;
+const description9 = `&nbsp;&nbsp;Delivering structural and architectural glazing details, including curtain wall designs.`;
+const description10 = `&nbsp;&nbsp;Providing a complete building model view to evaluate the suitability and selection of façade materials.`;
+const description11 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scan to BIM is a cutting-edge service that involves capturing detailed information about existing structures through laser scanning technology. This data is then used to generate accurate digital site representations, facilitating precise modeling, coordination, and quantity take-offs for both existing and new structures. Whether you're renovating, retrofitting, or constructing from scratch, our Scan to BIM services provide the accuracy and detail necessary for successful project execution.`;
 const description12 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural BIM ensures seamless collaboration between architects, engineers, and contractors, reducing discrepancies and improving project efficiency.`;
 function Information() {
   return (
     <MKBox component="section" py={2}>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox
-            width="3rem"
-            height="3rem"
-            variant="gradient"
-            bgColor="info"
-            color="white"
-            coloredShadow="info"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="xl"
-          >
-            <StarIcon fontSize="small">mediation</StarIcon>
+      <MKBox display="flex" alignItems="center" p={1}>
+        <MKBox
+          width="3rem"
+          height="3rem"
+          variant="gradient"
+          bgColor="info"
+          color="white"
+          coloredShadow="info"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          borderRadius="xl"
+        >
+          <StarIcon fontSize="small">mediation</StarIcon>
+        </MKBox>
+        <MKTypography variant="h4" color="text" pl={1}>
+        Design & Build with BIM
+        </MKTypography>
+      </MKBox>
+          <Container>
+            <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
+              </MKTypography>
+            </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
+            <MKBox
+              width="3rem"
+              height="3rem"
+              variant="gradient"
+              bgColor="info"
+              color="white"
+              coloredShadow="info"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              borderRadius="xl"
+            >
+              <StarIcon fontSize="small">mediation</StarIcon>
+            </MKBox>
+        <MKTypography variant="h4" color="text" pl={1}>
+        What is BIM?
+        </MKTypography>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          What is BIM?
-          </MKTypography>
-        </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <DoubleArrowTwoToneIcon fontSize="small"></DoubleArrowTwoToneIcon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Comprehensive Digital Representation
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Enhanced Collaboration
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      {/* <MKTypography variant="body1" color="text" pl={1} fontWeight="bold">
-          Our BIM Services
-        </MKTypography>       */}
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Lifecycle Management
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Data-Driven Decision Making
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <MKBox display="flex" alignItems="center" p={2}>
+          <Container>
+            <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
+              </MKTypography>
+            </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
           <MKBox
             width="3rem"
             height="3rem"
@@ -127,71 +107,20 @@ function Information() {
           >
             <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Our BIM Services (3D Virtual Modeling & Visualization)
+          <MKTypography variant="h4" color="text" pl={2}>
+          3D Virtual Modeling & Visualization
           </MKTypography>
-      </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Immersive Visualization
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Design Optimization
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Presentation Excellence
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Interactive Exploration
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <MKBox display="flex" alignItems="center" p={2}>
+          <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
+                </MKTypography>
+              </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
           <MKBox
             width="3rem"
             height="3rem"
@@ -204,100 +133,233 @@ function Information() {
             justifyContent="center"
             borderRadius="xl"
           >
-            <Icon fontSize="small">mediation</Icon>
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
+          <MKTypography variant="h4" color="text" pl={2}>
           Architectural BIM Services
           </MKTypography>
-      </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Accurate Architectural Modeling
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
+          <Container>
+            <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
+              </MKTypography>
+            </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
+          <MKBox
+            width="3rem"
+            height="3rem"
+            variant="gradient"
+            bgColor="info"
+            color="white"
+            coloredShadow="info"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="xl"
+          >
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Seamless Project Execution
+          <MKTypography variant="h4" color="text" pl={2}>
+          Structural BIM Services
           </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Streamlined Planning and Design
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
+          <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
+                </MKTypography>
+              </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
+          <MKBox
+            width="3rem"
+            height="3rem"
+            variant="gradient"
+            bgColor="info"
+            color="white"
+            coloredShadow="info"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="xl"
+          >
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Integration Across Disciplines
+          <MKTypography variant="h4" color="text" pl={2}>
+          MEP BIM Services
           </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description12 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      {/* <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Presentation Excellence
+          <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
+                </MKTypography>
+              </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
+          <MKBox
+            width="3rem"
+            height="3rem"
+            variant="gradient"
+            bgColor="info"
+            color="white"
+            coloredShadow="info"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="xl"
+          >
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
+          </MKBox>
+          <MKTypography variant="h4" color="text" pl={2}>
+          Facade BIM Services
           </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={10}>
-            <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
+          </MKBox>
+          <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
+                </MKTypography>
+              </MKBox>
+          </Container>
+            <Grid container spacing={3} py={5}>
+              <Grid item xs={12} sm={6} lg={3} >
+                <TransparentBlogCard
+                  image={post1}
+                //  title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post2}
+              //   title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post3}
+                // title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post4}
+                //  title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+            </Grid>
+            <MKBox display="flex" alignItems="center" p={1} py={1}>
+              <MKBox
+                width="3rem"
+                height="3rem"
+                variant="gradient"
+                bgColor="info"
+                color="white"
+                coloredShadow="info"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                borderRadius="xl"
+              >
+                <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
+              </MKBox>
+              <MKTypography variant="h4" color="text" pl={2}>
+              Our facade BIM modeling services include:
+              </MKTypography>
+            </MKBox>
+          <Container>
+          <MKBox display="flex"  p={1}>
+              <MKBox pl={4}>
+                  <MKBox pl={3}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
-              </li>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
-              </li>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
-              </li>
-            </ul>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex" alignItems="center" p={1}>
+          <MKBox
+            width="3rem"
+            height="3rem"
+            variant="gradient"
+            bgColor="info"
+            color="white"
+            coloredShadow="info"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="xl"
+          >
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
+          </MKBox>
+          <MKTypography variant="h4" color="text" pl={2}>
+          Scan to BIM
+          </MKTypography>
+          </MKBox>
+          <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
+                </MKTypography>
+              </MKBox>
+          </Container>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
+          <MKBox
+            width="3rem"
+            height="3rem"
+            variant="gradient"
+            bgColor="info"
+            color="white"
+            coloredShadow="info"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="xl"
+          >
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
+          </MKBox>
+          <MKTypography variant="h4" color="text" pl={2} py={5}>
+            Videos
           </MKTypography>
         </MKBox>
-      </Container> */}
     </MKBox>
   );
 }

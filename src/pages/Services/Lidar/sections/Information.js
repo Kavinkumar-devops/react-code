@@ -12,107 +12,73 @@ import DoubleArrowTwoToneIcon from '@mui/icons-material/DoubleArrowTwoTone';
 import StarIcon from '@mui/icons-material/Star';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 
+import TransparentBlogCard from "./TransparentBlogCard/index";
+// Image
+import post1 from "assets/image/mobile_mapping.png";
+import post2 from "assets/image/mobile_mapping.jpg";
+import post3 from "assets/image/mm1.jpeg";
+import post4 from "assets/f_images/mobilemapping.PNG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-const description1 = `Building Information Modeling (BIM) integrates multi-disciplinary data to create a holistic digital model of a building or infrastructure asset, covering every phase from design to operation.`;
-const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered by intelligent models and cloud-based platforms, BIM facilitates collaboration across all stakeholders, ensuring seamless communication and decision-making throughout the project lifecycle.`;
-const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM supports the entire lifecycle of a built asset, from initial planning and design through construction, maintenance, and eventual decommissioning, ensuring the project remains aligned with its objectives.`;
-const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By providing a centralized repository of all project-related data, BIM allows for informed decision-making, minimizing errors and optimizing resource allocation.`;
-const description5 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our 3D Visualization Services allow architects and engineers to create detailed and lifelike representations of their designs, enhancing understanding and stakeholder buy-in.`;
-const description6 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtual tours and 3D architectural design help identify potential design issues early, allowing for layout and feature optimization before construction begins.`;
-const description7 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High-quality 3D models set a new standard for presenting design concepts, ensuring that ideas are communicated effectively and executed with precision.`;
-const description8 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clients can interact with virtual models, exploring different design options and making adjustments in real-time, leading to better design outcomes.`;
-const description9 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our architectural BIM services provide detailed modeling for both commercial and residential projects, ensuring every design element is meticulously planned.`;
-const description10 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using platforms like Revit, we create comprehensive information models that support smooth integration and execution across all construction phases.`;
-const description11 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM streamlines the architectural planning process, enabling detailed and accurate modeling that aligns with the project’s vision.`;
+const description1 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile mapping represents a technological frontier where various digital tools and techniques converge to improve specific mapping tasks. Unlike traditional mapping methods that relied on theodolites and solar observations to determine fixed points, modern mobile mapping integrates GPS technology to provide precise, real-time data collection. This evolution has revolutionized the way maps are created, enabling the production of highly accurate and up-to-date maps with greater efficiency.`;
+const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Historically, the first modern maps were constructed in the late eighteenth century using theodolites to determine absolute positions of fixed points, often on high ground. Surveyors then mapped out large triangles over the landscape to establish a network of points, which was refined into a detailed landscape model featuring topography and urban structures. This process, known as 'primary triangulation,' laid the foundation for national surveys throughout the nineteenth century.`;
+const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the advent of aerial photography in the early twentieth century, map revision became more efficient, combining aerial images with ground surveys using modern theodolites and, later, GPS technology. Today, mobile mapping technologies have further streamlined these processes, making it possible to update and create maps with unprecedented speed and accuracy.`;
+const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The integration of digital technologies into mapping has not only reduced costs and logistical burdens but has also democratized the mapping process. While national surveys continue to produce framework maps, the accessibility of mobile mapping tools has empowered individuals and organizations to create maps for a variety of purposes—from urban planning and infrastructure development to environmental monitoring and community-driven initiatives.`;
+const description5 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Participatory mapping, in particular, has benefited from mobile mapping technologies. Groups and communities can now generate copyright-free maps by capturing GPS tracks from numerous contributors, enabling collaborative mapping efforts that serve local needs and advocate for social causes.`;
+const description6 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At BN-Geospatial, we offer a comprehensive range of mobile mapping services designed to meet the diverse needs of our clients:`;
+const description7 = `&nbsp;&nbsp;Real-Time Data Collection: Using GPS-enabled devices and advanced sensors, we capture high-precision geospatial data in real-time, ensuring that your maps are accurate and up-to-date.`;
+const description8 = `&nbsp;&nbsp;Custom Mapping Solutions: We tailor our mobile mapping services to suit specific project requirements, whether you're planning a new infrastructure project, conducting an environmental survey, or engaging in participatory mapping.`;
+const description9 = `&nbsp;&nbsp;Integration with GIS: Our mobile mapping data seamlessly integrates with GIS platforms, allowing for enhanced analysis, visualization, and decision-making.`;
+const description10 = `&nbsp;&nbsp;Cost-Effective Mapping: By leveraging the latest digital technologies, we reduce the cost and complexity of mapping projects, delivering high-quality results within your budget and timeframe.`;
+const description11 = `At BN-Geospatial, our mobile mapping services provide you with the tools and expertise needed to navigate the complexities of modern cartography. Whether you're working on a large-scale national survey or a localized community project, we help you achieve your mapping goals with precision and efficiency.`;
 const description12 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural BIM ensures seamless collaboration between architects, engineers, and contractors, reducing discrepancies and improving project efficiency.`;
 function Information() {
   return (
     <MKBox component="section" py={2}>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox
-            width="3rem"
-            height="3rem"
-            variant="gradient"
-            bgColor="info"
-            color="white"
-            coloredShadow="info"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="xl"
-          >
-            <StarIcon fontSize="small">mediation</StarIcon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          What is BIM?
-          </MKTypography>
+      <MKBox display="flex" alignItems="center" p={1}>
+        <MKBox
+          width="3rem"
+          height="3rem"
+          variant="gradient"
+          bgColor="info"
+          color="white"
+          coloredShadow="info"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          borderRadius="xl"
+        >
+          <StarIcon fontSize="small">mediation</StarIcon>
         </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <DoubleArrowTwoToneIcon fontSize="small"></DoubleArrowTwoToneIcon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Comprehensive Digital Representation
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Enhanced Collaboration
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      {/* <MKTypography variant="body1" color="text" pl={1} fontWeight="bold">
-          Our BIM Services
-        </MKTypography>       */}
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Lifecycle Management
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Data-Driven Decision Making
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <MKBox display="flex" alignItems="center" p={2}>
+        <MKTypography variant="h4" color="text" pl={1}>
+        What is Mobile Mapping?
+        </MKTypography>
+      </MKBox>
+          <Container>
+            <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
+              </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
+              </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
+              </MKTypography>
+            </MKBox>
+          </Container>
+      <MKBox display="flex" alignItems="center" p={1}>
           <MKBox
             width="3rem"
             height="3rem"
@@ -127,71 +93,132 @@ function Information() {
           >
             <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Our BIM Services (3D Virtual Modeling & Visualization)
-          </MKTypography>
-      </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Immersive Visualization
+          <MKTypography variant="h4" color="text" pl={2}>
+          The Impact of Mobile Mapping
           </MKTypography>
         </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Design Optimization
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Presentation Excellence
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Interactive Exploration
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <MKBox display="flex" alignItems="center" p={2}>
+            <Container>
+              <MKBox display="flex"  p={0}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex"  p={1}>
+              <MKBox pl={2}>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={2}>
+                <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
+                </MKTypography>
+              </MKBox>
+            </Container>
+            <Grid container spacing={3} py={5}>
+              <Grid item xs={12} sm={6} lg={3} >
+                <TransparentBlogCard
+                  image={post1}
+                //  title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post2}
+              //   title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post3}
+                // title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+              <TransparentBlogCard
+                  image={post4}
+                //  title="Building Information Modeling"
+                  action={{ }}
+                />
+              </Grid>
+            </Grid>
+            <MKBox display="flex" alignItems="center" p={1} py={1}>
+              <MKBox
+                width="3rem"
+                height="3rem"
+                variant="gradient"
+                bgColor="info"
+                color="white"
+                coloredShadow="info"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                borderRadius="xl"
+              >
+                <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
+              </MKBox>
+              <MKTypography variant="h4" color="text" pl={2}>
+              Our Mobile Mapping Services
+              </MKTypography>
+            </MKBox>
+          <Container>
+          <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+            <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
+            </MKTypography>
+            </MKBox>
+          <MKBox display="flex"  p={1}>
+              <MKBox pl={4}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="text" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={0}>
+            <MKBox pl={2}>
+            </MKBox>
+              <MKTypography variant="body1" color="text" pl={2}>
+              <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
+              </MKTypography>
+            </MKBox>
+          </Container>
+          <MKBox display="flex" alignItems="center" p={1}>
           <MKBox
             width="3rem"
             height="3rem"
@@ -204,100 +231,12 @@ function Information() {
             justifyContent="center"
             borderRadius="xl"
           >
-            <Icon fontSize="small">mediation</Icon>
+            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
           </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Architectural BIM Services
-          </MKTypography>
-      </MKBox>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Accurate Architectural Modeling
+          <MKTypography variant="h4" color="text" pl={2} py={5}>
+            Videos
           </MKTypography>
         </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Seamless Project Execution
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Streamlined Planning and Design
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Integration Across Disciplines
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={2}>
-          <p dangerouslySetInnerHTML={{ __html: description12 }}></p>
-          </MKTypography>
-        </MKBox>
-      </Container>
-      {/* <Container>
-        <MKBox display="flex" alignItems="center" p={2}>
-          <MKBox>
-            <Icon fontSize="small">mediation</Icon>
-          </MKBox>
-          <MKTypography variant="body1" color="text" pl={2}>
-          Presentation Excellence
-          </MKTypography>
-        </MKBox>
-        <MKBox display="flex"  p={2}>
-          <MKTypography variant="body2" color="text" pl={10}>
-            <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
-                <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
-              </li>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
-                <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
-              </li>
-              <li style={{ display: "flex", alignItems: "flex-start" }}>
-                <span style={{ color: "gold", marginRight: "8px" }}>★</span>
-                <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
-              </li>
-            </ul>
-          </MKTypography>
-        </MKBox>
-      </Container> */}
     </MKBox>
   );
 }
