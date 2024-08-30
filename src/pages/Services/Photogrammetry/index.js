@@ -86,11 +86,10 @@ function AboutUs() {
               },
             })}
           >
-            Design & Build with BIM
+            Photogrammetry
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-            have the opportunity to play this game
+          3D MODELLING - PLANIMETRIC Mapping - DTM Mapping - CORRIDOR Mapping - HYDRO Mapping
           </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading

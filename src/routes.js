@@ -22,6 +22,7 @@ import { GrContact } from "react-icons/gr";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { MdOutlineContactMail } from "react-icons/md";
 // Sections
+import UnderDevelopment from "pages/Presentation/sections/underdevelopment";
 
 import Features1 from "pages/Services/GIS";
 import Features2 from "pages/Services/BIM";
@@ -72,13 +73,13 @@ const routes = [
       },
       {
         name: "Lidar",
-        route: "/sections/page-sections/features",
+        route: "/sections/lider/features",
         component: <Features3 />,
       },
       {
         name: "WORLD MAP",
         route: "/sections/BIM/features",
-        component: <Features1 />,
+        component: <Presentation />,
       },
       {
         name: "Mobile Mapping",
@@ -92,22 +93,22 @@ const routes = [
         collapse: [
           {
             name: "CORRIDOR MAPPING",
-            route: "/sections/BIM/features",
+            route: "/sections/photogrammetry/features",
             component: <Features6 />,
           },
           {
             name: "DTM MAPPING",
-            route: "/sections/BIM/features",
+            route: "/sections/photogrammetry/features",
             component: <Features6 />,
           },
           {
             name: "HYDRO",
-            route: "/sections/BIM/features",
+            route: "/sections/photogrammetry/features",
             component: <Features6 />,
           },
           {
             name: "PLANIMETRIC",
-            route: "/sections/BIM/features",
+            route: "/sections/photogrammetry/features",
             component: <Features6 />,
           },
         ],
@@ -226,7 +227,7 @@ const routes = [
     name: "About Us",
     icon: <MdOutlineContactSupport size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/about-us",
-    component: <AboutUs fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
+    component: <UnderDevelopment fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
     columns: 1,
     rowsPerColumn: 2,
   },

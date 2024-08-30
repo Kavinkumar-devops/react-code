@@ -1,4 +1,4 @@
-# [D&M React](http://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit-react&text=Check%20Material%20kit%20React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-kit-react)
+# [D&M React](http://demos.bngeospatial.com/material-kit-react/#/?ref=readme-mkr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.bngeospatial.com/product/material-kit-react&text=Check%20Material%20kit%20React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20https://www.bngeospatial.com/product/material-kit-react)
 
 ![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed)
 
@@ -11,21 +11,21 @@ D&M React is built with over 40 frontend individual elements, like buttons, inpu
 
 This free MUI & React template is coming with pre-built design blocks, so the development process is seamless,
 switching from our pages to the real website is very easy to be done.
-View all components here. (https://www.creative-tim.com/learning-lab/react/alerts/material-kit/)
+View all components here. (https://www.bngeospatial.com/learning-lab/react/alerts/material-kit/)
 
 _Documentation built by Developers_
 Each element is well presented in very complex documentation.
-You can read more about the documentation here (https://www.creative-tim.com/learning-lab/react/overview/material-kit/).
+You can read more about the documentation here (https://www.bngeospatial.com/learning-lab/react/overview/material-kit/).
 
 _Example Pages_
 If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
 
-View example pages here. (https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/about-us)
+View example pages here. (https://demos.bngeospatial.com/material-kit-react/#/pages/landing-pages/about-us)
 
 **HELPFUL LINKS**
 
 - View [Github Repository](https://github.com/creativetimofficial/material-kit-react)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+- Check [FAQ Page](https://www.bngeospatial.com/faq)
 
 #### Special thanks
 
@@ -58,27 +58,27 @@ Let us know your thoughts below. And good luck with development!
 
 ## Versions
 
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.bngeospatial.com/product/material-kit-react?ref=readme-mkr)
 
 | React |
 | ----- |
 
-| [![D&M React](https://s3.amazonaws.com/creativetim_bucket/products/83/thumb/material-kit-2-react.jpg)](http://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr)
+| [![D&M React](https://s3.amazonaws.com/creativetim_bucket/products/83/thumb/material-kit-2-react.jpg)](http://demos.bngeospatial.com/material-kit-react/#/?ref=readme-mkr)
 
 ## Demo
 
-- [About Us](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/about-us?ref=readme-mkr)
-- [Contact Us](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/contact-us?ref=readme-mkr)
-- [Author](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/author?ref=readme-mkr)
-- [Pricing page](https://demos.creative-tim.com/material-kit-react/#/pages/authentication/sign-in?ref=readme-mkr)
+- [About Us](https://demos.bngeospatial.com/material-kit-react/#/pages/landing-pages/about-us?ref=readme-mkr)
+- [Contact Us](https://demos.bngeospatial.com/material-kit-react/#/pages/landing-pages/contact-us?ref=readme-mkr)
+- [Author](https://demos.bngeospatial.com/material-kit-react/#/pages/landing-pages/author?ref=readme-mkr)
+- [Pricing page](https://demos.bngeospatial.com/material-kit-react/#/pages/authentication/sign-in?ref=readme-mkr)
 
-[View More](https://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr).
+[View More](https://demos.bngeospatial.com/material-kit-react/#/?ref=readme-mkr).
 
 ## Quick start
 
 Quick start options:
 
-- Download from [D&M Works](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr).
+- Download from [D&M Works](https://www.bngeospatial.com/product/material-kit-react?ref=readme-mkr).
 
 ## Terminal Commands
 
@@ -93,7 +93,7 @@ Quick start options:
 
 ## Documentation
 
-The documentation for the Material Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/react/overview/material-kit/?ref=readme-mkr).
+The documentation for the Material Dashboard is hosted at our [website](https://www.bngeospatial.com/learning-lab/react/overview/material-kit/?ref=readme-mkr).
 
 ### What's included
 
@@ -168,11 +168,11 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- [Live Preview](https://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr)
-- [Buy Page](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/material-kit/?ref=readme-mkr)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-mkr)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-mkr)
+- [Live Preview](https://demos.bngeospatial.com/material-kit-react/#/?ref=readme-mkr)
+- [Buy Page](https://www.bngeospatial.com/product/material-kit-react?ref=readme-mkr)
+- Documentation is [here](https://www.bngeospatial.com/learning-lab/react/overview/material-kit/?ref=readme-mkr)
+- [License Agreement](https://www.bngeospatial.com/license?ref=readme-mkr)
+- [Support](https://www.bngeospatial.com/contact-us?ref=readme-mkr)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-react/issues)
 - [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
@@ -180,28 +180,28 @@ At present, we officially aim to support the last two versions of the following 
 
 We use GitHub Issues as the official bug tracker for the D&M React. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the D&M React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr).
+1. Make sure that you are using the latest version of the D&M React. Check the CHANGELOG from your dashboard on our [website](https://www.bngeospatial.com/product/material-kit-react?ref=readme-mkr).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mkr) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](https://www.bngeospatial.com/contact-us?ref=readme-mkr) instead of opening an issue.
 
 ## Licensing
 
-- Copyright 2023 [D&M Works](https://www.creative-tim.com?ref=readme-mkr)
-- D&M Works [license](https://www.creative-tim.com/license?ref=readme-mkr)
+- Copyright 2023 [D&M Works](https://www.bngeospatial.com?ref=readme-mkr)
+- D&M Works [license](https://www.bngeospatial.com/license?ref=readme-mkr)
 
 ## Useful Links
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-mkr) from D&M Works
+- [More products](https://www.bngeospatial.com/templates?ref=readme-mkr) from D&M Works
 
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-mkr) from D&M Works
+- [Freebies](https://www.bngeospatial.com/bootstrap-themes/free?ref=readme-mkr) from D&M Works
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mkr) (earn money)
+- [Affiliate Program](https://www.bngeospatial.com/affiliates/new?ref=readme-mkr) (earn money)
 
 ##### Social Media
 

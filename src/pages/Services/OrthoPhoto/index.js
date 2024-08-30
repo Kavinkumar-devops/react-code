@@ -14,7 +14,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/Services/OrthoPhoto/sections/Information";
+import Information from "./sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "./sections/Newsletter";
@@ -45,10 +45,10 @@ function AboutUs() {
     <>
           <DefaultNavbar routes={routes} sticky/>
         <BaseLayout
-      // title="Design & Build with BIM"
+      title="Ortho Photo"
       breadcrumb={[
-        { label: "Geospatial & Remote Sensing", route: "/sections/BIM2/features" },
-        { label: "BIM" },
+        { label: "Geospatial", route: "/sections/orthophoto/features" },
+        { label: "Ortho Photo" },
       ]}
     >
     <MKBox
@@ -86,11 +86,10 @@ function AboutUs() {
               },
             })}
           >
-            Design & Build with BIM
+            Ortho Photo
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-            have the opportunity to play this game
+          Orthoimagery Creation - DTM - Image Format Versatility - Advanced Orthorectification
           </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading

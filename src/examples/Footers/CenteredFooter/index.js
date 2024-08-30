@@ -89,7 +89,7 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "D&M Works" },
+  company: { href: "https://www.bngeospatial.com/", name: "D&M Works" },
   links: [
     { href: "#", name: "Company" },
     { href: "#", name: "About Us" },

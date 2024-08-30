@@ -71,7 +71,7 @@ function Download() {
                 <Tooltip title="Bootstrap 5 - Most popular front-end component library">
                   <MKBox
                     component="a"
-                    href="https://www.creative-tim.com/product/material-kit"
+                    href="https://www.bngeospatial.com/product/material-kit"
                     target="_blank"
                   >
                     <MKBox
@@ -137,7 +137,7 @@ function Download() {
                 <Tooltip title="Comming soon">
                   <MKBox
                     component="a"
-                    href="https://www.creative-tim.com/product/material-kit-react"
+                    href="https://www.bngeospatial.com/product/material-kit-react"
                     target="_blank"
                   >
                     <MKBox

@@ -21,99 +21,74 @@ import post4 from "assets/f_images/mobilemapping.PNG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-const description1 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile mapping represents a technological frontier where various digital tools and techniques converge to improve specific mapping tasks. Unlike traditional mapping methods that relied on theodolites and solar observations to determine fixed points, modern mobile mapping integrates GPS technology to provide precise, real-time data collection. This evolution has revolutionized the way maps are created, enabling the production of highly accurate and up-to-date maps with greater efficiency.`;
-const description2 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Historically, the first modern maps were constructed in the late eighteenth century using theodolites to determine absolute positions of fixed points, often on high ground. Surveyors then mapped out large triangles over the landscape to establish a network of points, which was refined into a detailed landscape model featuring topography and urban structures. This process, known as 'primary triangulation,' laid the foundation for national surveys throughout the nineteenth century.`;
-const description3 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the advent of aerial photography in the early twentieth century, map revision became more efficient, combining aerial images with ground surveys using modern theodolites and, later, GPS technology. Today, mobile mapping technologies have further streamlined these processes, making it possible to update and create maps with unprecedented speed and accuracy.`;
-const description4 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The integration of digital technologies into mapping has not only reduced costs and logistical burdens but has also democratized the mapping process. While national surveys continue to produce framework maps, the accessibility of mobile mapping tools has empowered individuals and organizations to create maps for a variety of purposes—from urban planning and infrastructure development to environmental monitoring and community-driven initiatives.`;
-const description5 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Participatory mapping, in particular, has benefited from mobile mapping technologies. Groups and communities can now generate copyright-free maps by capturing GPS tracks from numerous contributors, enabling collaborative mapping efforts that serve local needs and advocate for social causes.`;
-const description6 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At BN-Geospatial, we offer a comprehensive range of mobile mapping services designed to meet the diverse needs of our clients:`;
-const description7 = `&nbsp;&nbsp;Real-Time Data Collection: Using GPS-enabled devices and advanced sensors, we capture high-precision geospatial data in real-time, ensuring that your maps are accurate and up-to-date.`;
-const description8 = `&nbsp;&nbsp;Custom Mapping Solutions: We tailor our mobile mapping services to suit specific project requirements, whether you're planning a new infrastructure project, conducting an environmental survey, or engaging in participatory mapping.`;
-const description9 = `&nbsp;&nbsp;Integration with GIS: Our mobile mapping data seamlessly integrates with GIS platforms, allowing for enhanced analysis, visualization, and decision-making.`;
-const description10 = `&nbsp;&nbsp;Cost-Effective Mapping: By leveraging the latest digital technologies, we reduce the cost and complexity of mapping projects, delivering high-quality results within your budget and timeframe.`;
-const description11 = `At BN-Geospatial, our mobile mapping services provide you with the tools and expertise needed to navigate the complexities of modern cartography. Whether you're working on a large-scale national survey or a localized community project, we help you achieve your mapping goals with precision and efficiency.`;
-const description12 = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural BIM ensures seamless collaboration between architects, engineers, and contractors, reducing discrepancies and improving project efficiency.`;
+const description1 = `At BN-Geospatial, we specialize in delivering cutting-edge LiDAR (Light Detection and Ranging) services, providing our clients with precise and actionable geospatial data. Our expert team leverages advanced 3D point cloud processing and mapping techniques to offer reliable and cost-effective solutions tailored to your specific needs. We are committed to upholding the highest industry standards through a stringent multi-stage Quality Control/Quality Assurance (QC/QA) process, ensuring that every project exceeds client expectations. Our goal is to build lasting partnerships by consistently delivering superior service.`;
+const description2 = `LiDAR technology utilizes laser pulses to measure distances by timing how long it takes for the light to bounce back from a surface. This data is then processed to calculate accurate XYZ coordinates of the reflective surface, which is crucial for various mapping and surveying applications. At BN-Geospatial, we employ several LiDAR acquisition methods to suit different project requirements:`;
+const description3 = `&nbsp;&nbsp;Aerial LiDAR Survey (ALS): This method involves deploying laser scanning equipment from an aircraft. The laser pulses emitted from the system interact with the Earth's surface and the reflected signals are captured by onboard sensors. Equipped with GPS and Inertial Measurement Units (IMUs), the system provides highly accurate geospatial data for large-scale mapping projects.`;
+const description4 = `&nbsp;&nbsp;Mobile LiDAR Survey (MLS): By integrating LiDAR sensors with cameras and navigation systems on a mobile platform, this technique enables rapid data collection over extensive areas. It's particularly useful for surveying roadways, railways, and other linear infrastructures with high precision.`;
+const description5 = `&nbsp;&nbsp;Terrestrial LiDAR Survey (TLS): This ground-based scanning method combines laser technology with differential GPS to create detailed 3D models. Ideal for projects requiring intricate detail, such as building facades, vegetation analysis, and complex topographies.`;
+const description6 = `BN-Geospatial offers a broad spectrum of LiDAR services designed to meet the diverse needs of our clients, including but not limited to:`;
+const description7 = `&nbsp;&nbsp;Point Cloud Classification: Accurately identifying and classifying features such as bare earth, vegetation, buildings, bridges, and more.`;
+const description8 = `&nbsp;&nbsp;Digital Terrain Model (DTM) and Digital Surface Model (DSM) Generation: Creating high-resolution models for topographical mapping and analysis.`;
+const description9 = `&nbsp;&nbsp;Electrical Utility Mapping: Detailed mapping and classification of power lines and electrical infrastructure.`;
+const description10 = `&nbsp;&nbsp;Vegetation and Forestry Analysis: Precise mapping for forestry management, habitat studies, and environmental monitoring.`;
+const description11 = `&nbsp;&nbsp;Telecommunications Asset Management: Documentation and analysis of telecom infrastructure, ensuring accurate data for planning and development.`;
+const description12 = `&nbsp;&nbsp;Pipeline and Utility Project Support: Comprehensive mapping and analysis for pipeline routing and utility projects.`;
+const description13 = `&nbsp;&nbsp;Flood Risk and Water Resource Management: Floodplain mapping, hydro enforcement, and water resource analysis to support environmental and civil engineering projects.`;
+const description14 = `&nbsp;&nbsp;Mining and Resource Exploration: Detailed 3D modeling and spatial analysis to aid in resource extraction and site planning.`;
+const description15 = `&nbsp;&nbsp;3D Modeling and Feature Extraction: Converting LiDAR data into detailed 3D models for various engineering applications.`;
+const description16 = `&nbsp;&nbsp;Engineering Drawings: Generation of precise cross-sections, longitudinal sections, and other critical engineering documentation.`;
+const description17 = `&nbsp;&nbsp;Topographical Mapping: High-accuracy mapping services for land development, construction planning, and environmental studies.`;
+const description18 = `At BN-Geospatial pvt ltd, our mission is to empower your projects with the most accurate, high-quality geospatial data, helping you make informed decisions and achieve success. Whether your project requires aerial, mobile, or terrestrial LiDAR, our team is equipped with the expertise and technology to deliver exceptional results.`;
 function Information() {
   return (
     <MKBox component="section" py={2}>
-      <MKBox display="flex" alignItems="center" p={1}>
-        <MKBox
-          width="3rem"
-          height="3rem"
-          variant="gradient"
-          bgColor="info"
-          color="white"
-          coloredShadow="info"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          borderRadius="xl"
-        >
-          <StarIcon fontSize="small">mediation</StarIcon>
-        </MKBox>
-        <MKTypography variant="h4" color="text" pl={1}>
-        What is Mobile Mapping?
-        </MKTypography>
-      </MKBox>
-          <Container>
-            <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
-            </MKBox>
-              <MKTypography variant="body1" color="text" pl={2}>
-              <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
+          <MKBox display="flex" alignItems="center" mb={2}>
+            <MKTypography variant="h4" fontWeight="bold">
+            Comprehensive LiDAR Engineering Services
+            </MKTypography>
+          </MKBox>
+              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              {description1}
               </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-            <MKBox pl={2}>
-            </MKBox>
-              <MKTypography variant="body1" color="text" pl={2}>
+          <MKBox display="flex" alignItems="center" mb={2} >
+            <MKTypography variant="h4" fontWeight="bold">
+            Operational Overview
+            </MKTypography>
+          </MKBox>
+              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
               <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
               </MKTypography>
+          <MKBox display="flex"  p={1}>
+              <MKBox pl={4}>
+                  <MKBox pl={3}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
+                </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-            <MKBox pl={2}>
-            </MKBox>
-              <MKTypography variant="body1" color="text" pl={2}>
-              <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
-              </MKTypography>
-            </MKBox>
-          </Container>
-      <MKBox display="flex" alignItems="center" p={1}>
-          <MKBox
-            width="3rem"
-            height="3rem"
-            variant="gradient"
-            bgColor="info"
-            color="white"
-            coloredShadow="info"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="xl"
-          >
-            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
-          </MKBox>
-          <MKTypography variant="h4" color="text" pl={2}>
-          The Impact of Mobile Mapping
-          </MKTypography>
-        </MKBox>
-            <Container>
-              <MKBox display="flex"  p={0}>
-              <MKBox pl={2}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="text" pl={2}>
+                <MKTypography variant="body1" color="secondary" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
                 </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={4}>
+                  <MKBox pl={3}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
               </MKBox>
-              <MKBox display="flex"  p={1}>
-              <MKBox pl={2}>
-              </MKBox>
-                <MKTypography variant="body1" color="text" pl={2}>
+                <MKTypography variant="body1" color="secondary" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
                 </MKTypography>
-              </MKBox>
-            </Container>
-            <Grid container spacing={3} py={5}>
+            </MKBox>
+            <Grid container spacing={3} py={6}>
               <Grid item xs={12} sm={6} lg={3} >
                 <TransparentBlogCard
                   image={post1}
@@ -143,50 +118,31 @@ function Information() {
                 />
               </Grid>
             </Grid>
-            <MKBox display="flex" alignItems="center" p={1} py={1}>
-              <MKBox
-                width="3rem"
-                height="3rem"
-                variant="gradient"
-                bgColor="info"
-                color="white"
-                coloredShadow="info"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                borderRadius="xl"
-              >
-                <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
-              </MKBox>
-              <MKTypography variant="h4" color="text" pl={2}>
-              Our Mobile Mapping Services
-              </MKTypography>
-            </MKBox>
-          <Container>
-          <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
-            </MKBox>
-            <MKTypography variant="body1" color="text" pl={2}>
+            <MKBox display="flex" alignItems="center"  mb={2}>
+          <MKTypography variant="h4" fontWeight="bold">
+          Our Expertise
+          </MKTypography>
+          </MKBox>
+              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
               <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
-            </MKTypography>
-            </MKBox>
-          <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={2}>
-                    <Icon fontSize="small">mediation</Icon>
+              </MKTypography>
+                <MKBox display="flex"  p={1}>
+                  <MKBox pl={4}>
+                    <MKBox pl={3}>
+                      <Icon fontSize="small">mediation</Icon>
+                    </MKBox>
                   </MKBox>
-              </MKBox>
-                <MKTypography variant="body1" color="text" pl={0}>
-                <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
-                </MKTypography>
-            </MKBox>
+                  <MKTypography variant="body1" color="secondary" pl={0}>
+                  <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
+                  </MKTypography>
+                </MKBox>
             <MKBox display="flex"  p={1}>
               <MKBox pl={5}>
                   <MKBox pl={2}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="text" pl={0}>
+                <MKTypography variant="body1" color="secondary" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
                 </MKTypography>
             </MKBox>
@@ -196,7 +152,7 @@ function Information() {
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="text" pl={0}>
+                <MKTypography variant="body1" color="secondary" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
                 </MKTypography>
             </MKBox>
@@ -206,35 +162,86 @@ function Information() {
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="text" pl={0}>
+                <MKTypography variant="body1" color="secondary" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
                 </MKTypography>
             </MKBox>
-            <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
+                </MKTypography>
             </MKBox>
-              <MKTypography variant="body1" color="text" pl={2}>
-              <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description12 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description13 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description14 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description15 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description16 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKBox display="flex"  p={1}>
+              <MKBox pl={5}>
+                  <MKBox pl={2}>
+                    <Icon fontSize="small">mediation</Icon>
+                  </MKBox>
+              </MKBox>
+                <MKTypography variant="body1" color="secondary" pl={0}>
+                <p dangerouslySetInnerHTML={{ __html: description17 }}></p>
+                </MKTypography>
+            </MKBox>
+            <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <p dangerouslySetInnerHTML={{ __html: description18 }}></p>
               </MKTypography>
-            </MKBox>
-          </Container>
-          <MKBox display="flex" alignItems="center" p={1}>
-          <MKBox
-            width="3rem"
-            height="3rem"
-            variant="gradient"
-            bgColor="info"
-            color="white"
-            coloredShadow="info"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="xl"
-          >
-            <AutoFixHighIcon fontSize="small">mediation</AutoFixHighIcon>
-          </MKBox>
-          <MKTypography variant="h4" color="text" pl={2} py={5}>
-            Videos
+          <MKBox display="flex" alignItems="center" mb={2}>
+          <MKTypography variant="h4" fontWeight="bold">
+          Videoes
           </MKTypography>
         </MKBox>
     </MKBox>

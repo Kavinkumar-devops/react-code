@@ -229,7 +229,7 @@ export default {
           name: <><WhatsAppIcon sx={{ mr: 1 }} />6362641656</>
         },
         { 
-          name: <><EmailIcon sx={{ mr: 1 }} />info@bngeospacial.com</>
+          name: <><EmailIcon sx={{ mr: 1 }} />Info@bngeospatial.com</>
         },
       ],
     },

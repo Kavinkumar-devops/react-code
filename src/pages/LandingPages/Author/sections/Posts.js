@@ -71,7 +71,7 @@ function Places() {
               description="At BN-Geospatial, we specialize in creating high-precision orthoimages through advanced orthorectification processes. Orthorectification is essential for correcting geometric distortions..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/orthophoto/features",
                 color: "info",
                 label: "read more",
               }}
@@ -84,7 +84,7 @@ function Places() {
               description="At BN-Geospatial, we specialize in delivering cutting-edge LiDAR (Light Detection and Ranging) services, providing our clients with precise and actionable geospatial data...."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/lider/features",
                 color: "info",
                 label: "read more",
               }}
@@ -94,7 +94,7 @@ function Places() {
             <TransparentBlogCard
               image={post5}
               title="World Map"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+              description="A world map is a graphical representation of the Earth's surface that's projected onto a flat surface. It usually shows political and physical features, such as country borders, and can also display data..."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
@@ -123,7 +123,7 @@ function Places() {
               description="At BN-Geospatial, our Photogrammetry team utilizes state-of-the-art digital imaging technology, coupled with precise ground control data, to accurately reconstruct the geometry of specific..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/photogrammetry/features",
                 color: "info",
                 label: "read more",
               }}
@@ -136,7 +136,7 @@ function Places() {
               description="Corridors are important geographic features for biological conservation and biodiversity assessment. The identification and mapping of corridors is usually based on visual interpretations..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/photogrammetry/features",
                 color: "info",
                 label: "read more",
               }}
@@ -149,7 +149,7 @@ function Places() {
               description="Digital Terrain Models (DTMs) are commonly regarded as synonymous with bare-earth DEMs, emphasizing their focus on representing the geodesic surface without..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/photogrammetry/features",
                 color: "info",
                 label: "read more",
               }}
@@ -162,7 +162,7 @@ function Places() {
               description="FLOW-3D HYDRO is the complete 3D CFD modeling solution for the civil and environmental engineering industry. Powered by the industry-leading FLOW-3D solver engine..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/photogrammetry/features",
                 color: "info",
                 label: "read more",
               }}
@@ -175,7 +175,7 @@ function Places() {
               description="Planimetric mapping is a method of creating a 2-dimensional representation of the features and objects on the Earth's surface. It typically shows the location of man-made features..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/sections/photogrammetry/features",
                 color: "info",
                 label: "read more",
               }}

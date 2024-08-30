@@ -89,12 +89,12 @@ function SimpleFooter({ company, links, light }) {
 
 // Setting default values for the props of SimpleFooter
 SimpleFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "D&M Works" },
+  company: { href: "https://www.bngeospatial.com/", name: "D&M Works" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "D&M Works" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.bngeospatial.com/", name: "D&M Works" },
+    { href: "https://www.bngeospatial.com/presentation", name: "About Us" },
+    { href: "https://www.bngeospatial.com/blog", name: "Blog" },
+    { href: "https://www.bngeospatial.com/license", name: "License" },
   ],
   light: false,
 };
