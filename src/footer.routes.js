@@ -104,19 +104,19 @@ export default {
     {
       name: "Our Solutions",
       items: [
-        { 
-          name: (
-            <MKTypography
-              component={Link}
-              to="/sections/BIM2"
-              variant="button"
-              fontWeight="regular"
-              textTransform="capitalize"
-            >
-              1. GIS
-            </MKTypography>
-          ),
-        },
+        // { 
+        //   name: (
+        //     <MKTypography
+        //       component={Link}
+        //       to="/sections/BIM2"
+        //       variant="button"
+        //       fontWeight="regular"
+        //       textTransform="capitalize"
+        //     >
+        //       1. GIS
+        //     </MKTypography>
+        //   ),
+        // },
         { 
           name: (
             <MKTypography
@@ -126,7 +126,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              2. BIM
+              1. BIM
             </MKTypography>
           ),
         },
@@ -139,7 +139,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              3. Lidar
+              2. Lidar
             </MKTypography>
           ),
         },
@@ -152,7 +152,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              4. Photogrammetry
+              3. Photogrammetry
             </MKTypography>
           ),
         },
@@ -165,7 +165,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              5. Mobile Mapping
+              4. Mobile Mapping
             </MKTypography>
           ),
         },
@@ -178,7 +178,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              6. OrthoPhoto
+              5. OrthoPhoto
             </MKTypography>
           ),
         },
