@@ -121,7 +121,7 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/sections/BIM2"
+              to="/sections/BIM"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
@@ -134,7 +134,7 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/sections/page-sections/features"
+              to="/sections/lider/features"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
@@ -147,7 +147,7 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/pages/landing-pages/contact-us"
+              to="/sections/photogrammetry/features"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
