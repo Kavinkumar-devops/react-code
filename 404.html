@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
     <script type="text/javascript">
-        (function() {
-            // Check if the current path isn't the root or a recognized path
-            var currentPath = window.location.pathname;
-
-            // If not at the root or recognized, redirect to index.html
-            // The redirect happens only if not already redirected by checking against '/'
-            if (currentPath !== '/' && !currentPath.includes('index.html')) {
-                // Update the path in the browser to the correct route
-                window.history.replaceState(null, '', currentPath);
-
-                // Reload the SPA at the root level, allowing it to handle the route
-                window.location.href = '/';
-            }
-        })();
+      // Redirect to the correct route after 404
+      var pathname = window.location.pathname;
+      window.location.href = "/" + pathname;
     </script>
-</head>
-<body>
-    Redirecting...
-</body>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
