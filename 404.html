@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <script type="text/javascript">
+    <script type="text/javascript">
       // Redirect to the correct route after 404
       var pathname = window.location.pathname;
       var origin = window.location.origin;
-	
-	 if (!pathname.startsWith('/')) {
-        window.location.href = origin + pathname;
+
+      // Simulate try_files $uri $uri/ /index.html;
+      if (!pathname.endsWith('.html') && !pathname.endsWith('/') && pathname !== '/') {
+        window.location.href = origin + pathname + '/';
       }
     </script>
   </head>
