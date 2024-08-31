@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redirect to the correct route after 404
-      var pathname = window.location.pathname;
-      window.location.href = "/" + pathname;
+        // Capture the current domain, pathname, and search parameters
+        var origin = window.location.origin; // This includes protocol, domain, and port
+        var pathname = window.location.pathname; // Current path
+        var search = window.location.search; // Any query parameters
+
+        // Construct the full redirect URL including domain, path, and search parameters
+        var redirectUrl = origin + pathname + search;
+
+        // Redirect to the constructed URL
+        window.location.replace(redirectUrl);
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <p>Redirecting...</p>
-  </body>
+</body>
 </html>
