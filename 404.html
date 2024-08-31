@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL=/" />
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Redirects to the index.html while preserving the original path
         (function() {
-            var pathname = window.location.pathname;
-            var search = window.location.search;
-            var hash = window.location.hash;
+            // Capture the full path, query parameters, and hash
+            var pathname = window.location.pathname; // Gets the current path
+            var search = window.location.search;     // Gets the current search/query params
+            var hash = window.location.hash;         // Gets the current hash (if any)
 
-            // Check if the URL already contains a '?/' which might cause an incorrect redirect
-            if (!window.location.href.includes('?')) {
-                // Redirect to index.html with the full path appended
-                window.location.replace('/' + '#' + pathname + search + hash);
+            // Redirect to the root index.html and preserve the path
+            var redirectUrl = pathname + search + hash;
+
+            // Prevent redirect loop
+            if (!window.location.pathname.includes('404.html')) {
+                // Navigate to the correct path without changing the URL format
+                window.location.replace(redirectUrl);
             }
         })();
     </script>
