@@ -5,11 +5,18 @@
     <meta http-equiv="refresh" content="0; URL=/" />
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Redirects to the root path with the current path preserved in a query parameter
-        var pathname = window.location.pathname;
-        var search = window.location.search;
-        var hash = window.location.hash;
-        window.location.replace('/?' + pathname + search + hash);
+        // Redirects to the index.html while preserving the original path
+        (function() {
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+
+            // Check if the URL already contains a '?/' which might cause an incorrect redirect
+            if (!window.location.href.includes('?')) {
+                // Redirect to index.html with the full path appended
+                window.location.replace('/' + '#' + pathname + search + hash);
+            }
+        })();
     </script>
 </head>
 <body>
