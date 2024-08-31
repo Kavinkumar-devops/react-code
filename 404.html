@@ -2,14 +2,24 @@
 <html>
   <head>
     <script type="text/javascript">
-      // Redirect to the correct route after 404
-      var pathname = window.location.pathname;
-      var origin = window.location.origin;
+      // Redirect to the correct route after 404 (only if on a 404 page)
+      document.addEventListener("DOMContentLoaded", function () {
+        var pathname = window.location.pathname;
+        var origin = window.location.origin;
+        var xhr = new XMLHttpRequest();
 
-      // Simulate try_files $uri $uri/ /index.html;
-      if (!pathname.endsWith('.html') && !pathname.endsWith('/') && pathname !== '/') {
-        window.location.href = origin + pathname + '/';
-      }
+        // Check if the path exists by making a HEAD request
+        xhr.open("HEAD", pathname, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            // If status is 404, redirect to the correct path
+            if (xhr.status === 404) {
+              window.location.href = origin + '/index.html' + pathname;
+            }
+          }
+        };
+        xhr.send();
+      });
     </script>
   </head>
   <body>
