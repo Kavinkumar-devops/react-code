@@ -5,7 +5,10 @@
       // Redirect to the correct route after 404
       var pathname = window.location.pathname;
       var origin = window.location.origin;
-      window.location.href = origin + "/" + pathname;
+	
+	 if (!pathname.startsWith('/')) {
+        window.location.href = origin + pathname;
+      }
     </script>
   </head>
   <body>
