@@ -47,7 +47,7 @@ function Information() {
             Comprehensive LiDAR Engineering Services
             </MKTypography>
           </MKBox>
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               {description1}
               </MKTypography>
           <MKBox display="flex" alignItems="center" mb={2} >
@@ -55,36 +55,36 @@ function Information() {
             Operational Overview
             </MKTypography>
           </MKBox>
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
               </MKTypography>
           <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
-                  <MKBox pl={3}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
-                  <MKBox pl={3}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
                 </MKTypography>
             </MKBox>
@@ -123,120 +123,120 @@ function Information() {
           Our Expertise
           </MKTypography>
           </MKBox>
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
               </MKTypography>
                 <MKBox display="flex"  p={1}>
                   <MKBox pl={4}>
-                    <MKBox pl={3}>
+                    <MKBox pl={0}>
                       <Icon fontSize="small">mediation</Icon>
                     </MKBox>
                   </MKBox>
-                  <MKTypography variant="body1" color="secondary" pl={0}>
+                  <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                   <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
                   </MKTypography>
                 </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description12 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description13 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description14 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description15 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description16 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description17 }}></p>
                 </MKTypography>
             </MKBox>
-            <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+            <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description18 }}></p>
               </MKTypography>
           <MKBox display="flex" alignItems="center" mb={2}>

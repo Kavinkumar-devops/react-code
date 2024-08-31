@@ -41,7 +41,7 @@ function Information() {
               Design & Build with BIM
             </MKTypography>
           </MKBox>
-          <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+          <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
             {description12}
           </MKTypography>
           <MKBox display="flex" alignItems="center" mb={2}>
@@ -49,7 +49,7 @@ function Information() {
             Design & Build with BIM
             </MKTypography>
           </MKBox>
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               {description1}
               </MKTypography>
           <MKBox display="flex" alignItems="center" p={1}>
@@ -59,7 +59,7 @@ function Information() {
         </MKTypography>
           </MKBox>
 
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
               </MKTypography>
 
@@ -70,9 +70,9 @@ function Information() {
           </MKTypography>
           </MKBox>
 
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
-                <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
                 </MKTypography>
 
@@ -81,7 +81,7 @@ function Information() {
             Architectural BIM Services
             </MKTypography>
           </MKBox>
-              <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
               </MKTypography>
           <MKBox display="flex" alignItems="center" p={1}>
@@ -90,9 +90,9 @@ function Information() {
             </MKTypography>
           </MKBox>
 
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
-                <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
                 </MKTypography>
 
@@ -103,9 +103,9 @@ function Information() {
           </MKTypography>
           </MKBox>
 
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
-                <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
                 </MKTypography>
 
@@ -116,9 +116,9 @@ function Information() {
           </MKTypography>
           </MKBox>
 
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
-                <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
                 </MKTypography>
 
@@ -159,31 +159,31 @@ function Information() {
             </MKBox>
           <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
-                  <MKBox pl={3}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
-                <MKTypography variant="body1" color="secondary" pl={0}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
                 </MKTypography>
             </MKBox>
@@ -192,7 +192,7 @@ function Information() {
               Scan to BIM
               </MKTypography>
             </MKBox>
-                <MKTypography variant="body1" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
                 </MKTypography>
           <MKBox display="flex" alignItems="center" p={1}>

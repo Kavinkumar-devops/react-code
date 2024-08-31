@@ -222,12 +222,12 @@ export default {
     {
       name: "Connect with Us",
       items: [
-        { 
-          name: <><PhoneIcon sx={{ mr: 1 }} />6362641656</> 
-        },
-        { 
-          name: <><WhatsAppIcon sx={{ mr: 1 }} />6362641656</>
-        },
+        // { 
+        //   name: <><PhoneIcon sx={{ mr: 1 }} />6362641656</> 
+        // },
+        // { 
+        //   name: <><WhatsAppIcon sx={{ mr: 1 }} />6362641656</>
+        // },
         { 
           name: <><EmailIcon sx={{ mr: 1 }} />Info@bngeospatial.com</>
         },

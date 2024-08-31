@@ -57,21 +57,21 @@ function Information() {
       </MKBox>
           <Container>
             <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
+            <MKBox pl={0}>
             </MKBox>
               <MKTypography variant="body1" color="text" pl={2}>
               <p dangerouslySetInnerHTML={{ __html: description1 }}></p>
               </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-            <MKBox pl={2}>
+            <MKBox pl={0}>
             </MKBox>
               <MKTypography variant="body1" color="text" pl={2}>
               <p dangerouslySetInnerHTML={{ __html: description2 }}></p>
               </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-            <MKBox pl={2}>
+            <MKBox pl={0}>
             </MKBox>
               <MKTypography variant="body1" color="text" pl={2}>
               <p dangerouslySetInnerHTML={{ __html: description3 }}></p>
@@ -99,14 +99,14 @@ function Information() {
         </MKBox>
             <Container>
               <MKBox display="flex"  p={0}>
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
                 <MKTypography variant="body1" color="text" pl={2}>
                 <p dangerouslySetInnerHTML={{ __html: description4 }}></p>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex"  p={1}>
-              <MKBox pl={2}>
+              <MKBox pl={0}>
               </MKBox>
                 <MKTypography variant="body1" color="text" pl={2}>
                 <p dangerouslySetInnerHTML={{ __html: description5 }}></p>
@@ -164,7 +164,7 @@ function Information() {
             </MKBox>
           <Container>
           <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
+            <MKBox pl={0}>
             </MKBox>
             <MKTypography variant="body1" color="text" pl={2}>
               <p dangerouslySetInnerHTML={{ __html: description6 }}></p>
@@ -172,7 +172,7 @@ function Information() {
             </MKBox>
           <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
-                  <MKBox pl={2}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
@@ -181,8 +181,8 @@ function Information() {
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
@@ -191,8 +191,8 @@ function Information() {
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
@@ -201,8 +201,8 @@ function Information() {
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
-              <MKBox pl={5}>
-                  <MKBox pl={2}>
+              <MKBox pl={4}>
+                  <MKBox pl={0}>
                     <Icon fontSize="small">mediation</Icon>
                   </MKBox>
               </MKBox>
@@ -211,7 +211,7 @@ function Information() {
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={0}>
-            <MKBox pl={2}>
+            <MKBox pl={0}>
             </MKBox>
               <MKTypography variant="body1" color="text" pl={2}>
               <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
