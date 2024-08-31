@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
     <script type="text/javascript">
         (function() {
-            // Capture the full path, query parameters, and hash
-            var pathname = window.location.pathname; // Gets the current path
-            var search = window.location.search;     // Gets the current search/query params
-            var hash = window.location.hash;         // Gets the current hash (if any)
+            // Capture the current path, search parameters, and hash
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
 
-            // Redirect to the root index.html and preserve the path
-            var redirectUrl = pathname + search + hash;
+            // Check if the current URL has already been redirected to avoid a loop
+            if (!window.location.href.includes('redirected')) {
+                // Append a unique parameter to mark the redirect
+                var redirectUrl = pathname + search + hash + (search ? '&' : '?') + 'redirected=true';
 
-            // Prevent redirect loop
-            if (!window.location.pathname.includes('404.html')) {
-                // Navigate to the correct path without changing the URL format
+                // Use History API to change the URL without reloading the page
+                window.history.replaceState(null, '', redirectUrl);
+
+                // Reload the page once to ensure the SPA router takes control
                 window.location.replace(redirectUrl);
+            } else {
+                // If the URL contains 'redirected', do not redirect again
+                // This allows the SPA to handle the route correctly
+                console.log('Redirect prevented: Already redirected once.');
             }
         })();
     </script>
