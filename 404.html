@@ -1,22 +1,29 @@
+
+Original file line number	Original file line	Diff line number	Diff line change
+@@ -0,0 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Capture the current domain, pathname, and search parameters
-        var origin = window.location.origin; // This includes protocol, domain, and port
-        var pathname = window.location.pathname; // Current path
-        var search = window.location.search; // Any query parameters
+        (function() {
+            // Check if the current path isn't the root or a recognized path
+            var currentPath = window.location.pathname;
 
-        // Construct the full redirect URL including domain, path, and search parameters
-        var redirectUrl = origin + pathname + search;
+            // If not at the root or recognized, redirect to index.html
+            // The redirect happens only if not already redirected by checking against '/'
+            if (currentPath !== '/' && !currentPath.includes('index.html')) {
+                // Update the path in the browser to the correct route
+                window.history.replaceState(null, '', currentPath);
 
-        // Redirect to the constructed URL
-        window.location.replace(redirectUrl);
+                // Reload the SPA at the root level, allowing it to handle the route
+                window.location.href = '/';
+            }
+        })();
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    Redirecting...
 </body>
 </html>
