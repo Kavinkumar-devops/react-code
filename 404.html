@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redirect to the correct route after 404 (only if on a 404 page)
-      document.addEventListener("DOMContentLoaded", function () {
-        var pathname = window.location.pathname;
-        var origin = window.location.origin;
-        var xhr = new XMLHttpRequest();
+        // Capture the current domain, pathname, and search parameters
+        var origin = window.location.origin; // This includes protocol, domain, and port
+        var pathname = window.location.pathname; // Current path
+        var search = window.location.search; // Any query parameters
 
-        // Check if the path exists by making a HEAD request
-        xhr.open("HEAD", pathname, true);
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            // If status is 404, redirect to the correct path
-            if (xhr.status === 404) {
-              window.location.href = origin +  pathname + index.html;
-            }
-          }
-        };
-        xhr.send();
-      });
+        // Construct the full redirect URL including domain, path, and search parameters
+        var redirectUrl = origin + pathname + search;
+
+        // Redirect to the constructed URL
+        window.location.replace(redirectUrl);
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <p>Redirecting...</p>
-  </body>
+</body>
 </html>
