@@ -1,29 +1,18 @@
-
-Original file line number	Original file line	Diff line number	Diff line change
-@@ -0,0 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bngeospatial...</title>
+    <meta http-equiv="refresh" content="0; URL=/" />
+    <title>Redirecting...</title>
     <script type="text/javascript">
-        (function() {
-            // Check if the current path isn't the root or a recognized path
-            var currentPath = window.location.pathname;
-
-            // If not at the root or recognized, redirect to index.html
-            // The redirect happens only if not already redirected by checking against '/'
-            if (currentPath !== '/' && !currentPath.includes('index.html')) {
-                // Update the path in the browser to the correct route
-                window.history.replaceState(null, '', currentPath);
-
-                // Reload the SPA at the root level, allowing it to handle the route
-                window.location.href = '/';
-            }
-        })();
+        // Redirects to the root path with the current path preserved in a query parameter
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        window.location.replace('/?' + pathname + search + hash);
     </script>
 </head>
 <body>
-    bngeospatial...
+    Redirecting...
 </body>
 </html>
