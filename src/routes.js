@@ -50,11 +50,11 @@ const routes = [
         route: "/sections/lider/features",
         component: <Features3 />,
       },
-      {
-        name: "WORLD MAP",
-        route: "/sections/BIM/features",
-        component: <Presentation />,
-      },
+      // {
+      //   name: "WORLD MAP",
+      //   route: "/sections/BIM/features",
+      //   component: <Presentation />,
+      // },
       {
         name: "Mobile Mapping",
         route: "/sections/mapping/features",

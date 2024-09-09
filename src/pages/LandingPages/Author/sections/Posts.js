@@ -90,7 +90,7 @@ function Places() {
               }}
             />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
+          {/* <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post5}
               title="World Map"
@@ -102,7 +102,7 @@ function Places() {
                 label: "read more",
               }}
             />
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post6}

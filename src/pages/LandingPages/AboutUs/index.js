@@ -22,7 +22,8 @@ import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
-import bgImage from "assets/images/bg-about-us.jpg";
+// import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/aboutus.jpg";
 
 function AboutUs() {
   return (
@@ -95,9 +96,9 @@ function AboutUs() {
         }}
       >
         <Information />
-        <Team />
+        {/* <Team />
         <Featuring />
-        <Newsletter />
+        <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
