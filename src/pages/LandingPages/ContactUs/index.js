@@ -11,11 +11,13 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import MapComponent from "./map";
+import Container from "@mui/material/Container";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage1 from "assets/images/contactus-logo1.png";
 import "leaflet/dist/leaflet.css";
 
 function ContactUs() {
@@ -122,9 +124,9 @@ function ContactUs() {
             </MKBox>
           </MKBox>
         </Grid>
-        <Grid
+        {/* <Grid
           item
-          xs={10}
+          xs={12}
           sm={10}
           md={7}
           lg={6}
@@ -132,32 +134,17 @@ function ContactUs() {
           ml={{ xs: "auto", lg: 6 }}
           mr={{ xs: "auto", lg: 6 }}
         >
-                      <MKBox
-              variant="gradient"
-              bgColor="info"
-              coloredShadow="info"
-              borderRadius="lg"
-              p={2}
-              mx={2}
-              mt={-3}
-            >
-              <MKTypography variant="h3" color="white">
-                Map
-              </MKTypography>
+                   <Grid container item justifyContent="center" xs={20} md={20} sx={{ ml: "auto" }}>
+            <MKBox position="relative">
+              <MKBox component="img" src={bgImage1} alt="macbook" width="80%" />
             </MKBox>
-          <MapComponent lat={12.955826} lng={77.527512} /> {/* Example for Bangalore */}        
-        </Grid>
-          {/* <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
+          </Grid> 
         </Grid> */}
+        <Container>
+        <Grid container alignItems="center">
+            <MapComponent lat={12.955826} lng={77.527512} />
+        </Grid>   
+        </Container>
       </Grid>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
