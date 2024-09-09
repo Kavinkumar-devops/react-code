@@ -10,12 +10,13 @@ import MKTypography from "components/MKTypography";
 // D&M React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-
+import MapComponent from "./map";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import "leaflet/dist/leaflet.css";
 
 function ContactUs() {
   return (
@@ -24,20 +25,7 @@ function ContactUs() {
         routes={routes}
         sticky
       />
-      <MKBox position="fixed" top="0.5rem" width="100%">
-      </MKBox>
       <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
-        </Grid>
         <Grid
           item
           xs={12}
@@ -82,7 +70,15 @@ function ContactUs() {
                   <Grid item xs={12} md={6}>
                     <MKInput
                       variant="standard"
-                      label="Full Name"
+                      label="First Name"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      variant="standard"
+                      label="Last Name"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
                     />
@@ -96,6 +92,15 @@ function ContactUs() {
                       fullWidth
                     />
                   </Grid>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      type="number"
+                      variant="standard"
+                      label="Phone Number"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
                   <Grid item xs={12}>
                     <MKInput
                       variant="standard"
@@ -104,7 +109,7 @@ function ContactUs() {
                       InputLabelProps={{ shrink: true }}
                       multiline
                       fullWidth
-                      rows={6}
+                      rows={3}
                     />
                   </Grid>
                 </Grid>
@@ -117,6 +122,42 @@ function ContactUs() {
             </MKBox>
           </MKBox>
         </Grid>
+        <Grid
+          item
+          xs={10}
+          sm={10}
+          md={7}
+          lg={6}
+          xl={4}
+          ml={{ xs: "auto", lg: 6 }}
+          mr={{ xs: "auto", lg: 6 }}
+        >
+                      <MKBox
+              variant="gradient"
+              bgColor="info"
+              coloredShadow="info"
+              borderRadius="lg"
+              p={2}
+              mx={2}
+              mt={-3}
+            >
+              <MKTypography variant="h3" color="white">
+                Map
+              </MKTypography>
+            </MKBox>
+          <MapComponent lat={12.955826} lng={77.527512} /> {/* Example for Bangalore */}        
+        </Grid>
+          {/* <Grid item xs={12} lg={6}>
+          <MKBox
+            display={{ xs: "none", lg: "flex" }}
+            width="calc(100% - 2rem)"
+            height="calc(100vh - 2rem)"
+            borderRadius="lg"
+            ml={2}
+            mt={2}
+            sx={{ backgroundImage: `url(${bgImage})` }}
+          />
+        </Grid> */}
       </Grid>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

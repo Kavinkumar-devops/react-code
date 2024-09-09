@@ -126,7 +126,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              1. BIM
+              BIM
             </MKTypography>
           ),
         },
@@ -139,7 +139,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              2. Lidar
+              Lidar
             </MKTypography>
           ),
         },
@@ -152,7 +152,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              3. Photogrammetry
+              Photogrammetry
             </MKTypography>
           ),
         },
@@ -165,7 +165,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              4. Mobile Mapping
+              Mobile Mapping
             </MKTypography>
           ),
         },
@@ -178,7 +178,7 @@ export default {
               fontWeight="regular"
               textTransform="capitalize"
             >
-              5. OrthoPhoto
+              OrthoPhoto
             </MKTypography>
           ),
         },
