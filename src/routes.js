@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable prettier/prettier */
 // @mui material components
-import Icon from "@mui/material/Icon";
 
 // @mui icons
 //import GitHubIcon from "@mui/icons-material/GitHub";
@@ -11,42 +10,17 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 //import Author from "layouts/pages/landing-pages/author";
 
-import RoofingIcon from '@mui/icons-material/Roofing';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import ContactsIcon from '@mui/icons-material/Contacts';
-import InfoIcon from '@mui/icons-material/Info';
-import { FcAbout } from "react-icons/fc";
-import { MdOutlineContactSupport } from "react-icons/md";
-import { GrContact } from "react-icons/gr";
-import { MdOutlineConnectWithoutContact } from "react-icons/md";
-import { MdOutlineContactMail } from "react-icons/md";
+import RoofingIcon from '@mui/icons-material/Roofing';
+import { MdOutlineConnectWithoutContact, MdOutlineContactSupport } from "react-icons/md";
 // Sections
-import UnderDevelopment from "pages/Presentation/sections/underdevelopment";
 
-import Features1 from "pages/Services/GIS";
+import Presentation from "layouts/pages/presentation";
 import Features2 from "pages/Services/BIM";
 import Features3 from "pages/Services/Lidar";
 import Features4 from "pages/Services/MobileMapping";
 import Features5 from "pages/Services/OrthoPhoto";
 import Features6 from "pages/Services/Photogrammetry";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
-import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
-import Badges from "layouts/sections/elements/badges";
-import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
-import Buttons from "layouts/sections/elements/buttons";
-import Dropdowns from "layouts/sections/elements/dropdowns";
-import ProgressBars from "layouts/sections/elements/progress-bars";
-import Toggles from "layouts/sections/elements/toggles";
-import Typography from "layouts/sections/elements/typography";
-import Presentation from "layouts/pages/presentation";
 
 const routes = [
   {
@@ -76,11 +50,11 @@ const routes = [
         route: "/sections/lider/features",
         component: <Features3 />,
       },
-      {
-        name: "WORLD MAP",
-        route: "/sections/BIM/features",
-        component: <Presentation />,
-      },
+      // {
+      //   name: "WORLD MAP",
+      //   route: "/sections/BIM/features",
+      //   component: <Presentation />,
+      // },
       {
         name: "Mobile Mapping",
         route: "/sections/mapping/features",
@@ -227,7 +201,8 @@ const routes = [
     name: "About Us",
     icon: <MdOutlineContactSupport size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/about-us",
-    component: <UnderDevelopment fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
+    component: <AboutUs />,
+    // component: <UnderDevelopment fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
     columns: 1,
     rowsPerColumn: 2,
   },
