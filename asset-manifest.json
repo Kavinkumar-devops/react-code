@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.ffe7c006.js",
+    "main.css": "/static/css/main.2e662a65.css",
+    "main.js": "/static/js/main.44e112d1.js",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
+    "static/media/aboutus.jpg": "/static/media/aboutus.4fcb56b1233fa42c8275.jpg",
     "static/media/drone_mapping3.png": "/static/media/drone_mapping3.d9afcc2ce05f6bed43fb.png",
     "static/media/SeamEditing.PNG": "/static/media/SeamEditing.751c6338012e30429c0c.PNG",
     "static/media/photogramettry2.jpg": "/static/media/photogramettry2.11226e3059c273858587.jpg",
@@ -25,7 +27,6 @@
     "static/media/photo1.jpg": "/static/media/photo1.6438b74a8c244c535bfe.jpg",
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
-    "static/media/bg-about-us.jpg": "/static/media/bg-about-us.cf9a123e2a3d371d53da.jpg",
     "static/media/BIM2.jpg": "/static/media/BIM2.88b4d009ea7dbed1c1a2.jpg",
     "static/media/Lider3.jpg": "/static/media/Lider3.80197dcf44417a14292d.jpg",
     "static/media/Transformer.jpg": "/static/media/Transformer.e61950eddab110e00bc7.jpg",
@@ -36,14 +37,10 @@
     "static/media/map.jpg": "/static/media/map.daf3aa2c4f2dcf230aad.jpg",
     "static/media/mobile_mapping.jpg": "/static/media/mobile_mapping.b23f942eef1dbfb88635.jpg",
     "static/media/mm1.jpeg": "/static/media/mm1.22b843f46248903a7fb2.jpeg",
-    "static/media/team-1.jpg": "/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
     "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "static/media/team-5.jpg": "/static/media/team-5.d59ab7b9f95f1169cf83.jpg",
-    "static/media/team-2.jpg": "/static/media/team-2.13ae2ce3e12f4cfed420.jpg",
-    "static/media/team-3.jpg": "/static/media/team-3.0ef0be95e6850814c79e.jpg",
     "static/media/ivana-square.jpg": "/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
     "static/media/ivana-squares.jpg": "/static/media/ivana-squares.3c555b856b04c2ab921b.jpg",
-    "static/media/team-4.jpg": "/static/media/team-4.85c82b6e60178804017f.jpg",
     "static/media/logo-digitalocean.svg": "/static/media/logo-digitalocean.a1f147b01387952368e3180edf221c96.svg",
     "static/media/logo-pinterest.svg": "/static/media/logo-pinterest.844709031a3c1266979e933c371e043a.svg",
     "static/media/logo-vodafone.svg": "/static/media/logo-vodafone.b3e8486c0cac220bc3a31c9eab049b21.svg",
@@ -54,9 +51,11 @@
     "static/media/logo-nasa.svg": "/static/media/logo-nasa.c5d11f8820bfde5fd64db0074156e06c.svg",
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
     "index.html": "/index.html",
-    "main.ffe7c006.js.map": "/static/js/main.ffe7c006.js.map"
+    "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
+    "main.44e112d1.js.map": "/static/js/main.44e112d1.js.map"
   },
   "entrypoints": [
-    "static/js/main.ffe7c006.js"
+    "static/css/main.2e662a65.css",
+    "static/js/main.44e112d1.js"
   ]
 }
