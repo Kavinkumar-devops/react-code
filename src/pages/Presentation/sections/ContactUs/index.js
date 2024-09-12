@@ -1,4 +1,6 @@
 // @mui material components
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import Grid from "@mui/material/Grid";
 // D&M React components
 import MKBox from "components/MKBox";

@@ -19,8 +19,60 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 import bgImage1 from "assets/images/contactus-logo1.png";
 import "leaflet/dist/leaflet.css";
+import React, { useState } from "react";
+import axios from "axios";
+import { Alert } from "react-bootstrap";
+import MKAlert from "components/MKAlert";
 
 function ContactUs() {
+  
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+  try {
+    const response = await axios.post("https://mail-latest.onrender.com/send-email", formData);
+    
+    if (response.status === 200) {
+      console.log("Response:", response.data);
+
+      // Show success message
+      setSuccess(true);
+
+      // Clear form fields after success
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      // Hide the success message after 5 seconds
+      setTimeout(() => setSuccess(false), 3000);
+    }
+  } catch (error) {
+    console.error("Error sending message:", error);
+    alert("Failed to send message.");
+  }
+};
+
   return (
     <>
       <DefaultNavbar
@@ -78,60 +130,80 @@ function ContactUs() {
                 For further questions, including partnership opportunities, please email
                 Info@bngeospatial.com or contact using our contact form.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="First Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Last Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="number"
-                      variant="standard"
-                      label="Phone Number"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={3}
-                    />
-                  </Grid>
+              <MKBox width="100%" component="form" method="post" autoComplete="off" onSubmit={handleSubmit}>
+              <Grid container spacing={3}>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="First Name"
+                    name="firstname"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.firstname}
+                    onChange={handleChange}
+                  />
                 </Grid>
-                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
-                  </MKButton>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Last Name"
+                    name="lastname"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.lastname}
+                    onChange={handleChange}
+                  />
                 </Grid>
-              </MKBox>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    type="email"
+                    variant="standard"
+                    label="Email"
+                    name="email"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Phone"
+                    name="phone"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <MKInput
+                    variant="standard"
+                    label="What can we help you with?"
+                    name="message"
+                    placeholder="Describe your problem in at least 250 characters"
+                    InputLabelProps={{ shrink: true }}
+                    multiline
+                    fullWidth
+                    rows={6}
+                    value={formData.message}
+                    onChange={handleChange}
+                  />
+                </Grid>
+              </Grid>
+              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                <MKButton type="submit" variant="gradient" color="info">
+                  Send Message
+                </MKButton>
+              </Grid>
+              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                {/* Success Message */}
+                {success && (
+                 <MKAlert color="success">Email sent successfully</MKAlert>  
+                 )}
+              </Grid>
+           </MKBox>
             </MKBox>
           </MKBox>
         </Grid>

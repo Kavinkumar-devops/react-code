@@ -14,7 +14,7 @@ import MKButton from "components/MKButton";
 import macbook from "assets/images/GIT.png";
 import React, { useState } from "react";
 import axios from "axios";
-import { Alert } from "react-bootstrap";
+import MKAlert from "components/MKAlert";
 
 function Newsletter() {
   const [formData, setFormData] = useState({
@@ -37,18 +37,6 @@ function Newsletter() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-      // Validation: Ensure all fields are filled and the message has at least 10 characters
-  if (
-    !formData.firstname.trim() ||
-    !formData.lastname.trim() ||
-    !formData.email.trim() ||
-    !formData.phone.trim() ||
-    formData.message.length < 10
-  ) {
-    alert("Please fill in all fields and ensure the message is at least 10 characters long.");
-    return;
-  }
-
   try {
     const response = await axios.post("https://mail-latest.onrender.com/send-email", formData);
     
@@ -68,7 +56,7 @@ function Newsletter() {
       });
 
       // Hide the success alert after 5 seconds
-      setTimeout(() => setSuccess(false), 5000);
+      setTimeout(() => setSuccess(false), 3000);
     }
   } catch (error) {
     console.error("Error sending message:", error);
@@ -78,12 +66,6 @@ function Newsletter() {
 
   return (
     <>
-      {/* Success alert */}
-      {success && (
-        <Alert variant="success" onClose={() => setSuccess(false)} dismissible>
-          Message sent successfully!
-        </Alert>
-      )}
     <MKBox component="section" pt={6} my={6}>
       <Container>
         <Grid container alignItems="center">
@@ -182,6 +164,12 @@ function Newsletter() {
                 <MKButton type="submit" variant="gradient" color="info">
                   Send Message
                 </MKButton>
+                </Grid>
+              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                {/* Success Message */}
+                {success && (
+                 <MKAlert color="success">Email sent successfully</MKAlert>  
+                 )}
               </Grid>
            </MKBox>
             </MKBox>
