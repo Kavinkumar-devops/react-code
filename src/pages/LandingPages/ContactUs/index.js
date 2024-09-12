@@ -23,9 +23,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Alert } from "react-bootstrap";
 import MKAlert from "components/MKAlert";
+import CircularProgress from "@mui/material/CircularProgress";
+import TextField from "@mui/material/TextField";
 
 function ContactUs() {
-  
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -34,6 +35,9 @@ function ContactUs() {
     message: "",
   });
   const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,8 +47,34 @@ function ContactUs() {
     }));
   };
 
+  // Validation rules
+  const validate = () => {
+    let tempErrors = {};
+    tempErrors.firstname = formData.firstname ? "" : "First name is required";
+    tempErrors.lastname = formData.lastname ? "" : "Last name is required";
+    tempErrors.email = /\S+@\S+\.\S+/.test(formData.email)
+      ? ""
+      : "Email is not valid";
+    tempErrors.phone = formData.phone.length === 10
+      ? ""
+      : "Phone number must be 10 digits";
+    tempErrors.message =
+      formData.message.length >= 10
+        ? ""
+        : "Message should be at least 10 characters long";
+
+    setErrors(tempErrors);
+    return Object.values(tempErrors).every((x) => x === "");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+     // Perform validation check
+     if (!validate()) return;
+
+     setLoading(true); // Start loading when form is submitted
+ 
 
   try {
     const response = await axios.post("https://mail-latest.onrender.com/send-email", formData);
@@ -52,7 +82,7 @@ function ContactUs() {
     if (response.status === 200) {
       console.log("Response:", response.data);
 
-      // Show success message
+      // Show success alert
       setSuccess(true);
 
       // Clear form fields after success
@@ -64,12 +94,14 @@ function ContactUs() {
         message: "",
       });
 
-      // Hide the success message after 5 seconds
+      // Hide the success alert after 5 seconds
       setTimeout(() => setSuccess(false), 3000);
     }
   } catch (error) {
-    console.error("Error sending message:", error);
-    alert("Failed to send message.");
+    setFailure(true);
+    setTimeout(() => setFailure(false), 3000);
+  }finally {
+    setLoading(false); // Set loading to false when the request completes
   }
 };
 
@@ -132,75 +164,90 @@ function ContactUs() {
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off" onSubmit={handleSubmit}>
               <Grid container spacing={3}>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="First Name"
-                    name="firstname"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                    value={formData.firstname}
-                    onChange={handleChange}
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Last Name"
-                    name="lastname"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                    value={formData.lastname}
-                    onChange={handleChange}
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    type="email"
-                    variant="standard"
-                    label="Email"
-                    name="email"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Phone"
-                    name="phone"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <MKInput
-                    variant="standard"
-                    label="What can we help you with?"
-                    name="message"
-                    placeholder="Describe your problem in at least 250 characters"
-                    InputLabelProps={{ shrink: true }}
-                    multiline
-                    fullWidth
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                  />
-                </Grid>
-              </Grid>
-              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                <MKButton type="submit" variant="gradient" color="info">
-                  Send Message
-                </MKButton>
-              </Grid>
-              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+          <Grid item xs={12} md={6}>
+            <TextField
+              variant="standard"
+              label="First Name"
+              name="firstname"
+              InputLabelProps={{ shrink: true }}
+              fullWidth
+              value={formData.firstname}
+              onChange={handleChange}
+              error={!!errors.firstname}
+              helperText={errors.firstname}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              variant="standard"
+              label="Last Name"
+              name="lastname"
+              InputLabelProps={{ shrink: true }}
+              fullWidth
+              value={formData.lastname}
+              onChange={handleChange}
+              error={!!errors.lastname}
+              helperText={errors.lastname}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              type="email"
+              variant="standard"
+              label="Email"
+              name="email"
+              InputLabelProps={{ shrink: true }}
+              fullWidth
+              value={formData.email}
+              onChange={handleChange}
+              error={!!errors.email}
+              helperText={errors.email}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              variant="standard"
+              label="Phone"
+              name="phone"
+              InputLabelProps={{ shrink: true }}
+              fullWidth
+              value={formData.phone}
+              onChange={handleChange}
+              error={!!errors.phone}
+              helperText={errors.phone}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              variant="standard"
+              label="What can we help you with?"
+              name="message"
+              placeholder="Describe your problem in at least 10 characters"
+              InputLabelProps={{ shrink: true }}
+              multiline
+              fullWidth
+              rows={6}
+              value={formData.message}
+              onChange={handleChange}
+              error={!!errors.message}
+              helperText={errors.message}
+            />
+          </Grid>
+        </Grid>
+            {/* Submit button with loading spinner */}
+            <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+              <MKButton type="submit" variant="gradient" color="info" disabled={loading}>
+                {loading ? <CircularProgress size={24} /> : "Send Message"}
+              </MKButton>
+            </Grid>
+              <Grid container item justifyContent="center" xs={12} mt={2} mb={1}>
                 {/* Success Message */}
                 {success && (
                  <MKAlert color="success">Email sent successfully</MKAlert>  
+                 )}
+                {/* failure Message */}
+                {failure && (
+                 <MKAlert color="error">Try after sometime</MKAlert>  
                  )}
               </Grid>
            </MKBox>
