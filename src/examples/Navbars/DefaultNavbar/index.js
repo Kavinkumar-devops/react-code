@@ -26,6 +26,7 @@ import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarD
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 // D&M React base styles
 import breakpoints from "assets/theme/base/breakpoints";
+import brandLogo from "assets/images/logo2.png";
 
 function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
@@ -536,7 +537,14 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "BN-Geospatial Private Limited",
+  // brand: "BN-Geospatial Private Limited",
+  // brand: <img src={brandLogo} alt="BN-Geospatial Logo" style={{ height: "40px" }} />,
+  brand: (
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <img src={brandLogo} alt="BN-Geospatial Logo" style={{ height: "30px", marginRight: "10px" }} />
+      <span>BN-Geospatial Private Limited</span>
+    </div>
+  ),
   transparent: false,
   light: false,
   action: false,

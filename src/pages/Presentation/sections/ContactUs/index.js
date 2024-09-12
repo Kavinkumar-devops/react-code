@@ -14,8 +14,39 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import React, { useState } from "react";
+import axios from "axios";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post("https://mail-latest.onrender.com/send-email", formData);
+      console.log("Response:", response.data);
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Failed to send message.");
+    }
+  };
+
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
@@ -74,7 +105,7 @@ function ContactUs() {
                 For further questions, including partnership opportunities, please email
                 Info@bngeospatial.com or contact using our contact form.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
+              <MKBox width="100%" component="form" method="post" autoComplete="off" onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput

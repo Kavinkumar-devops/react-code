@@ -15,13 +15,13 @@ import { Link } from 'react-router-dom';
 // D&M React components
 import MKTypography from "components/MKTypography";
 // Image
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from "assets/images/logo1.png";
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "BN- Geospatial  Pvt ltd",
+    // name: "BN- Geospatial  Pvt ltd",
     image: logoCT,
     route: "/",
   },
