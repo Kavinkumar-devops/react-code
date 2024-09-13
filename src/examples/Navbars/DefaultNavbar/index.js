@@ -541,9 +541,9 @@ DefaultNavbar.defaultProps = {
   // brand: <img src={brandLogo} alt="BN-Geospatial Logo" style={{ height: "40px" }} />,
   brand: (
     <div style={{ display: "flex", alignItems: "center" }}>
-      <img src={brandLogo} alt="BN-Geospatial Logo" style={{ height: "30px", marginRight: "10px" }} />
-      <span>BN-Geospatial Private Limited</span>
-    </div>
+    <img src={brandLogo} alt="BN-Geospatial Logo" style={{ height: "30px", marginRight: "10px", marginLeft: "-20px" }} />
+    <span>BN-Geospatial Private Limited</span>
+  </div>
   ),
   transparent: false,
   light: false,
