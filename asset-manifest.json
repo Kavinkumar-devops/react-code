@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.44e112d1.js",
+    "main.js": "/static/js/main.8ed6baa3.js",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
     "static/media/aboutus.jpg": "/static/media/aboutus.4fcb56b1233fa42c8275.jpg",
@@ -17,6 +17,7 @@
     "static/media/interiors 1.PNG": "/static/media/interiors 1.2256ab5addc8faf003d6.PNG",
     "static/media/worksticker.png": "/static/media/worksticker.e66328e65960633c00de.png",
     "static/media/GIT.png": "/static/media/GIT.08ce0e548980f4a7a173.png",
+    "static/media/contactus-logo1.png": "/static/media/contactus-logo1.8dd1c21e11df604560c2.png",
     "static/media/mobilemapping.PNG": "/static/media/mobilemapping.dc4e5d6b9faaa42a056b.PNG",
     "static/media/rotating-card-bg-back.jpeg": "/static/media/rotating-card-bg-back.183088de91adb283a9ae.jpeg",
     "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
@@ -28,6 +29,8 @@
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
     "static/media/BIM2.jpg": "/static/media/BIM2.88b4d009ea7dbed1c1a2.jpg",
+    "static/media/logo2.png": "/static/media/logo2.fe046cab280e11f30274.png",
+    "static/media/logo1.png": "/static/media/logo1.23a5a8369a43f2c2cbad.png",
     "static/media/Lider3.jpg": "/static/media/Lider3.80197dcf44417a14292d.jpg",
     "static/media/Transformer.jpg": "/static/media/Transformer.e61950eddab110e00bc7.jpg",
     "static/media/hydro.jpg": "/static/media/hydro.ade7db18dcef70295c2f.jpg",
@@ -52,10 +55,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
     "index.html": "/index.html",
     "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.44e112d1.js.map": "/static/js/main.44e112d1.js.map"
+    "main.8ed6baa3.js.map": "/static/js/main.8ed6baa3.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.44e112d1.js"
+    "static/js/main.8ed6baa3.js"
   ]
 }
