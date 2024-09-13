@@ -48,7 +48,7 @@ function AboutUs() {
       // title="Design & Build with BIM"
       breadcrumb={[
         { label: "Geospatial", route: "/sections/BIM2/features" },
-        { label: "BIM" },
+        { label: "Photogrammetry" },
       ]}
     >
     <MKBox
