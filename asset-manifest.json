@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.854fc47e.js",
+    "main.js": "/static/js/main.ab2c0275.js",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
     "static/media/aboutus.jpg": "/static/media/aboutus.4fcb56b1233fa42c8275.jpg",
     "static/media/drone_mapping3.png": "/static/media/drone_mapping3.d9afcc2ce05f6bed43fb.png",
     "static/media/SeamEditing.PNG": "/static/media/SeamEditing.751c6338012e30429c0c.PNG",
     "static/media/photogramettry2.jpg": "/static/media/photogramettry2.11226e3059c273858587.jpg",
+    "static/media/Bim15.jpg": "/static/media/Bim15.e084aa8b3800fb8d7321.jpg",
     "static/media/macbook.png": "/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/3DVisualization.PNG": "/static/media/3DVisualization.71c48aa35cdd7ab1b9aa.PNG",
     "static/media/mobile_mapping.png": "/static/media/mobile_mapping.a732c60c470b6815a296.png",
@@ -55,10 +56,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
     "index.html": "/index.html",
     "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.854fc47e.js.map": "/static/js/main.854fc47e.js.map"
+    "main.ab2c0275.js.map": "/static/js/main.ab2c0275.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.854fc47e.js"
+    "static/js/main.ab2c0275.js"
   ]
 }
