@@ -200,7 +200,7 @@ export default {
               <LocationOnIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
               #1399, Ground Floor, 3rd Cross, 1st Stage 2nd Cross, Chandra Layout, Bengaluru 5600 40
             </MKTypography>
-             <MKTypography variant="button" fontWeight="bold" textTransform="capitalize" mt={1}>
+             {/* <MKTypography variant="button" fontWeight="bold" textTransform="capitalize" mt={1}>
                Landmark:
                <MKTypography
                  component="span"
@@ -212,11 +212,14 @@ export default {
                >
                  Near Ashirwad Bakery
                </MKTypography>
-             </MKTypography>
+             </MKTypography> */}
             </>
           ),
         },
-        { name: "Locate Us on Map", href: "https://www.google.com/maps?q=12.956389,77.527500",style:"color: 'blue', textDecoration: 'underline'" },
+        { 
+          name: "Locate Us on Map", 
+          href: "https://www.google.com/maps?q=12.956389,77.527500"
+        }
       ],
     },
     {

@@ -36,6 +36,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import bgImage1 from "assets/image/BIM3.jpg";
 import bgImage2 from "assets/image/drone_mapping3.png";
 import bgImage3 from "assets/image/photogramettry2.jpg";
+import bgImage4 from "assets/image/Bim15.jpg";
 // import bgImage4 from "assets/image/GIS4.jpeg";
 // import bgImage5 from "assets/image/GIS1.png";
 import Posts from "pages/LandingPages/Author/sections/Posts";
@@ -51,12 +52,13 @@ const slideBackground = keyframes`
   }
 `;
 const contentArray = [
-  "Scan to BIM - As built model - BIM services",
+  "Geo Information - Engineering - BIM solutions",
   "3D Modelling - Planimetric Mapping",
   "DTM Mapping - Corridor Mapping - Hydro Mapping",
+  "Scan to BIM - As built model - BIM services",
 ];
 
-const imageArray = [bgImage1, bgImage2, bgImage3];
+const imageArray = [bgImage1, bgImage2, bgImage3,bgImage4];
 
 function Presentation() {
   const [currentIndex, setCurrentIndex] = useState(0);

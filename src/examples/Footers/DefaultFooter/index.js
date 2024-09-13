@@ -68,6 +68,7 @@ function DefaultFooter({ content }) {
                         variant="button"
                         fontWeight="regular"
                         textTransform="capitalize"
+                        style={{ color: '#02024e' }}
                       >
                         {name}
                       </MKTypography>
