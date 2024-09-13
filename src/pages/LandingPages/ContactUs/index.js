@@ -272,7 +272,18 @@ function ContactUs() {
         </Grid> */}
         <Container>
         <Grid container alignItems="center">
-            <MapComponent lat={12.955826} lng={77.527512} />
+            {/* <MapComponent lat={12.955826} lng={77.527512} /> */}
+            <div style={{ width: '100%', height: '500px' }}>
+              <iframe
+                title="Google Map"
+                width="100%"
+                height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777.928340264943!2d77.5275116!3d12.9558258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e6d992b1b73%3A0x3e7b79d57c67c8a2!2s12%C2%B057&#39;21.0&#34;N%2077%C2%B031&#39;39.0&#34;E!5e0!3m2!1sen!2sin!4v1632913321932!5m2!1sen!2sin"
+                allowFullScreen=""
+                aria-hidden="false"
+                tabIndex="0"
+              ></iframe>
+            </div>
         </Grid>   
         </Container>
       </Grid>
