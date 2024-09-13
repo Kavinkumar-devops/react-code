@@ -212,7 +212,7 @@ function Newsletter() {
               <Grid container item justifyContent="center" xs={12} mt={2} mb={1}>
                 {/* Success Message */}
                 {success && (
-                 <MKAlert color="success">Email sent successfully</MKAlert>  
+                 <MKAlert color="success">Submitted</MKAlert>  
                  )}
                 {/* failure Message */}
                 {failure && (
