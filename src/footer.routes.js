@@ -210,7 +210,7 @@ export default {
                  textTransform="none"
                  sx={{ ml: 3 }}
                >
-                 Near Ashirwad Bekary
+                 Near Ashirwad Bakery
                </MKTypography>
              </MKTypography>
             </>

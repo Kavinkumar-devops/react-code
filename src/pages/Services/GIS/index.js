@@ -92,7 +92,7 @@ function AboutUs() {
             We&apos;re constantly trying to express ourselves and actualize our dreams. If you
             have the opportunity to play this game
           </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading
             </MKButton>
           <MKTypography variant="h6" color="white" mt={8} mb={1}>
@@ -111,7 +111,7 @@ function AboutUs() {
             <MKTypography component="a" variant="body1" color="white" href="#">
               <i className="fab fa-google-plus" />
             </MKTypography>
-          </MKBox>
+          </MKBox> */}
         </Grid>
       </Container>
     </MKBox>

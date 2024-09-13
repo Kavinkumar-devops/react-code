@@ -91,7 +91,7 @@ function AboutUs() {
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
           Point Cloud Classification - DTM - DSM -Vegetation and Forestry Analysis
           </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading
             </MKButton>
           <MKTypography variant="h6" color="white" mt={8} mb={1}>
@@ -110,7 +110,7 @@ function AboutUs() {
             <MKTypography component="a" variant="body1" color="white" href="#">
               <i className="fab fa-google-plus" />
             </MKTypography>
-          </MKBox>
+          </MKBox> */}
         </Grid>
       </Container>
     </MKBox>
