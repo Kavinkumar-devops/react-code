@@ -47,7 +47,7 @@ function AboutUs() {
         <BaseLayout
       title="Ortho Photo"
       breadcrumb={[
-        { label: "Geospatial", route: "/sections/orthophoto/features" },
+        { label: "Home", route: "/" },
         { label: "Ortho Photo" },
       ]}
     >

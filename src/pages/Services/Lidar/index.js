@@ -47,7 +47,7 @@ function AboutUs() {
         <BaseLayout
       // title="LIDER"
       breadcrumb={[
-        { label: "Geospatial", route: "/sections/lider/features" },
+        { label: "Home", route: "/" },
         { label: "LIDER" },
       ]}
     >

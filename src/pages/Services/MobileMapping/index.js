@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
+import Box from "@mui/material/Box";
 // D&M React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -25,95 +26,109 @@ import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/image/3DVisualization.PNG";
 import bgImage1 from "assets/image/1.PNG";
-
-const bgImages = [
-  bgImage,
-  bgImage1
-];
+import videoSrc from "assets/video/mvideo.mp4";
+import videoSrc1 from "assets/video/mmvideo.mp4";
 
 function AboutUs() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % bgImages.length);
-    }, 4000); // Change image every 5 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
   return (
     <>
-          <DefaultNavbar routes={routes} sticky/>
+      <DefaultNavbar routes={routes} sticky/>
         <BaseLayout
       // title="Design & Build with BIM"
       breadcrumb={[
-        { label: "Geospatial", route: "/sections/mapping/features" },
+        { label: "Home", route: "/" },
         { label: "Mobile Mapping" },
       ]}
     >
-    <MKBox
-      minHeight="75vh"
-      width="100%"
-      sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-          `${linearGradient(
-            rgba(gradients.dark.main, 0.6),
-            rgba(gradients.dark.state, 0.6)
-          )}, url(${bgImages[currentImage]})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "grid",
-        placeItems: "center",
-      }}
-    >
-      <Container>
-        <Grid
-          container
-          item
-          xs={12}
-          lg={8}
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
-          sx={{ mx: "auto", textAlign: "center" }}
+      {/* <MKBox
+        component="video"
+        controls
+        width="100%"
+        autoPlay
+        muted
+        loop
+        sx={{
+          borderRadius: "8px",
+          boxShadow: "0 0 15px 5px rgba(0, 0, 0, 0.3)", // Black shadow effect
+          outline: "none",
+          pointerEvents: "none", // Disable user interactions like play/pause/fullscreen
+        }}
+      >
+        <source src={videoSrc1} type="video/mp4" />  
+        Your browser does not support the video tag.
+      </MKBox> */}
+      <MKBox
+        sx={{
+          position: "relative", // Parent is relative to position children absolutely
+          // width: "100%",
+          borderRadius: "8px",
+          boxShadow: "0 0 15px 5px rgba(0, 0, 0, 0.3)", // Black shadow effect
+          overflow: "hidden",  // Ensures the video and content stay within the box
+        }}
+      >
+        {/* Background Video */}
+        <MKBox
+          component="video"
+          autoPlay
+          muted
+          loop
+          width="100%"
+          sx={{
+            borderRadius: "8px",
+            boxShadow: "0 0 15px 5px rgba(0, 0, 0, 0.3)", // Black shadow effect
+            outline: "none",
+          }}
         >
-          <MKTypography
-            variant="h1"
-            color="white"
-            sx={({ breakpoints, typography: { size } }) => ({
-              [breakpoints.down("md")]: {
-                fontSize: size["3xl"],
-              },
-            })}
-          >
-            Mobile Mapping
-          </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-          Real-Time Data Collection-Mobile Mapping Custom Mapping -GIS Integration
-          </MKTypography>
-            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              Start Reading
-            </MKButton>
-          <MKTypography variant="h6" color="white" mt={8} mb={1}>
-            Find us on
-          </MKTypography>
-          <MKBox display="flex" justifyContent="center" alignItems="center">
-            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-              <i className="fab fa-facebook" />
-            </MKTypography>
-            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-              <i className="fab fa-instagram" />
-            </MKTypography>
-            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-              <i className="fab fa-twitter" />
-            </MKTypography>
-            <MKTypography component="a" variant="body1" color="white" href="#">
-              <i className="fab fa-google-plus" />
-            </MKTypography>
-          </MKBox> */}
-        </Grid>
-      </Container>
-    </MKBox>
+          <source src={videoSrc1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </MKBox>
+
+        {/* Content on top of the video */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "white",  // Text color
+            textAlign: "center",
+            padding: "20px",
+            zIndex: 1, // Ensure content is above the video
+          }}
+        >
+          <Container>
+            <Grid
+              container
+              item
+              xs={12}
+              lg={8}
+              justifyContent="center"
+              alignItems="center"
+              flexDirection="column"
+              sx={{ mx: "auto" }}
+            >
+              <MKTypography
+                variant="h1"
+                color="white"
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                Mobile Mapping
+              </MKTypography>
+              <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+                Real-Time Data Collection - Mobile Mapping - Custom Mapping - GIS Integration
+              </MKTypography>
+            </Grid>
+          </Container>
+        </Box>
+      </MKBox>
       <Card
         sx={{
           p: 2,

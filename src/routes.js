@@ -17,6 +17,7 @@ import { MdOutlineConnectWithoutContact, MdOutlineContactSupport } from "react-i
 
 import Presentation from "layouts/pages/presentation";
 import Features2 from "pages/Services/BIM";
+import Features7 from "pages/Services/VR";
 import Features3 from "pages/Services/Lidar";
 import Features4 from "pages/Services/MobileMapping";
 import Features5 from "pages/Services/OrthoPhoto";
@@ -41,6 +42,11 @@ const routes = [
         component: <Features2 />,
       },
       {
+        name: "VR",
+        route: "/sections/VR",
+        component: <Features7 />,
+      },
+      {
         name: "Orthophoto",
         route: "/sections/orthophoto/features",
         component: <Features5 />,
@@ -58,136 +64,33 @@ const routes = [
       },
       {
         name: "Photogrammetry",
-        // description: "Options",
-        dropdown: true,
-        collapse: [
-          {
-            name: "CORRIDOR MAPPING",
-            route: "/sections/photogrammetry/features",
-            component: <Features6 />,
-          },
-          {
-            name: "DTM MAPPING",
-            route: "/sections/photogrammetry/features",
-            component: <Features6 />,
-          },
-          {
-            name: "HYDRO",
-            route: "/sections/photogrammetry/features",
-            component: <Features6 />,
-          },
-          {
-            name: "PLANIMETRIC",
-            route: "/sections/photogrammetry/features",
-            component: <Features6 />,
-          },
-        ],
+        route: "/sections/photogrammetry/features",
+        component: <Features6 />,
       },
       // {
-      //   name: "navigation",
-      //   description: "See all navigations",
+      //   name: "Photogrammetry",
+      //   // description: "Options",
       //   dropdown: true,
       //   collapse: [
       //     {
-      //       name: "navbars",
-      //       route: "/sections/navigation/navbars",
-      //       component: <Navbars />,
+      //       name: "CORRIDOR MAPPING",
+      //       route: "/sections/photogrammetry/features",
+      //       component: <Features6 />,
       //     },
       //     {
-      //       name: "nav tabs",
-      //       route: "/sections/navigation/nav-tabs",
-      //       component: <NavTabs />,
+      //       name: "DTM MAPPING",
+      //       route: "/sections/photogrammetry/features",
+      //       component: <Features6 />,
       //     },
       //     {
-      //       name: "pagination",
-      //       route: "/sections/navigation/pagination",
-      //       component: <Pagination />,
-      //     },
-      //   ],
-      // },
-      // {
-      //   name: "input areas",
-      //   description: "See all input areas",
-      //   dropdown: true,
-      //   collapse: [
-      //     {
-      //       name: "inputs",
-      //       route: "/sections/input-areas/inputs",
-      //       component: <Inputs />,
+      //       name: "HYDRO",
+      //       route: "/sections/photogrammetry/features",
+      //       component: <Features6 />,
       //     },
       //     {
-      //       name: "forms",
-      //       route: "/sections/input-areas/forms",
-      //       component: <Forms />,
-      //     },
-      //   ],
-      // },
-      // {
-      //   name: "attention catchers",
-      //   description: "See all examples",
-      //   dropdown: true,
-      //   collapse: [
-      //     {
-      //       name: "alerts",
-      //       route: "/sections/attention-catchers/alerts",
-      //       component: <Alerts />,
-      //     },
-      //     {
-      //       name: "modals",
-      //       route: "/sections/attention-catchers/modals",
-      //       component: <Modals />,
-      //     },
-      //     {
-      //       name: "tooltips & popovers",
-      //       route: "/sections/attention-catchers/tooltips-popovers",
-      //       component: <TooltipsPopovers />,
-      //     },
-      //   ],
-      // },
-      // {
-      //   name: "elements",
-      //   description: "See all 32 examples",
-      //   dropdown: true,
-      //   collapse: [
-      //     {
-      //       name: "avatars",
-      //       route: "/sections/elements/avatars",
-      //       component: <Avatars />,
-      //     },
-      //     {
-      //       name: "badges",
-      //       route: "/sections/elements/badges",
-      //       component: <Badges />,
-      //     },
-      //     {
-      //       name: "breadcrumbs",
-      //       route: "/sections/elements/breadcrumbs",
-      //       component: <BreadcrumbsEl />,
-      //     },
-      //     {
-      //       name: "buttons",
-      //       route: "/sections/elements/buttons",
-      //       component: <Buttons />,
-      //     },
-      //     {
-      //       name: "dropdowns",
-      //       route: "/sections/elements/dropdowns",
-      //       component: <Dropdowns />,
-      //     },
-      //     {
-      //       name: "progress bars",
-      //       route: "/sections/elements/progress-bars",
-      //       component: <ProgressBars />,
-      //     },
-      //     {
-      //       name: "toggles",
-      //       route: "/sections/elements/toggles",
-      //       component: <Toggles />,
-      //     },
-      //     {
-      //       name: "typography",
-      //       route: "/sections/elements/typography",
-      //       component: <Typography />,
+      //       name: "PLANIMETRIC",
+      //       route: "/sections/photogrammetry/features",
+      //       component: <Features6 />,
       //     },
       //   ],
       // },

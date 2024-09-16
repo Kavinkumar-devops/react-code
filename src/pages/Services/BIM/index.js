@@ -47,7 +47,7 @@ function AboutUs() {
         <BaseLayout
       // title="Design & Build with BIM"
       breadcrumb={[
-        { label: "Geospatial", route: "/sections/BIM2/features" },
+        { label: "Home", route: "/" },
         { label: "BIM" },
       ]}
     >
