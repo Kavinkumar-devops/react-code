@@ -2,23 +2,16 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 // D&M React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
 // D&M React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/Services/VR/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "./sections/Newsletter";
 import BaseLayout from "layouts/sections/components/BaseLayout";
 // Routes
 import routes from "routes";
