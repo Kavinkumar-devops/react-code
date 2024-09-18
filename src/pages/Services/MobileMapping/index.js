@@ -26,7 +26,6 @@ import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/image/3DVisualization.PNG";
 import bgImage1 from "assets/image/1.PNG";
-import videoSrc from "assets/video/mvideo.mp4";
 import videoSrc1 from "assets/video/mmvideo.mp4";
 
 function AboutUs() {
