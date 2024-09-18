@@ -65,7 +65,7 @@ function FeaturesOne() {
                   justifyContent="center"
                   borderRadius="xl"
                 >
-                  <Icon fontSize="small">mediation</Icon>
+                  <Icon fontSize="small">bolt</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
                   Expertise in delivering tailored solutions for complex

@@ -171,11 +171,11 @@ function Information() {
             </MKTypography>
             </MKBox>
           <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
-                  </MKBox>
-              </MKBox>
+          <MKBox pl={4}>
+            <MKBox pl={0}>
+            <Icon fontSize="small">bolt</Icon>
+            </MKBox>
+          </MKBox>
                 <MKTypography variant="body1" color="text" pl={0}>
                 <p dangerouslySetInnerHTML={{ __html: description7 }}></p>
                 </MKTypography>
@@ -183,7 +183,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body1" color="text" pl={0}>
@@ -193,7 +193,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body1" color="text" pl={0}>
@@ -203,7 +203,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body1" color="text" pl={0}>

@@ -121,9 +121,9 @@ function AboutUs() {
               >
                 Mobile Mapping
               </MKTypography>
-              <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+              {/* <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
                 Real-Time Data Collection - Mobile Mapping - Custom Mapping - GIS Integration
-              </MKTypography>
+              </MKTypography> */}
             </Grid>
           </Container>
         </Box>
@@ -132,7 +132,7 @@ function AboutUs() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -12,
+          mt: -5,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}

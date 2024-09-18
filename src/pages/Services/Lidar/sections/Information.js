@@ -61,7 +61,7 @@ function Information() {
           <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -71,7 +71,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -81,7 +81,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -129,7 +129,7 @@ function Information() {
                 <MKBox display="flex"  p={1}>
                   <MKBox pl={4}>
                     <MKBox pl={0}>
-                      <Icon fontSize="small">mediation</Icon>
+                      <Icon fontSize="small">bolt</Icon>
                     </MKBox>
                   </MKBox>
                   <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -139,7 +139,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -149,7 +149,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -159,7 +159,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -169,7 +169,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -179,7 +179,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -189,7 +189,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -199,7 +199,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -209,7 +209,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -219,7 +219,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -229,7 +229,7 @@ function Information() {
             <MKBox display="flex"  p={1}>
               <MKBox pl={4}>
                   <MKBox pl={0}>
-                    <Icon fontSize="small">mediation</Icon>
+                    <Icon fontSize="small">bolt</Icon>
                   </MKBox>
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
