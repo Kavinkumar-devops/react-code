@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.3d44241f.js",
+    "main.js": "/static/js/main.2381497f.js",
     "static/media/AVR_GIF.gif": "/static/media/AVR_GIF.489e98e61d70b6bcfa62.gif",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
@@ -27,6 +27,7 @@
     "static/media/contactus-logo1.png": "/static/media/contactus-logo1.8dd1c21e11df604560c2.png",
     "static/media/mobilemapping.PNG": "/static/media/mobilemapping.dc4e5d6b9faaa42a056b.PNG",
     "static/media/vr31.jpg": "/static/media/vr31.515975803240a07e89fc.jpg",
+    "static/media/mobilemapping1.PNG": "/static/media/mobilemapping1.540031dd07a1888b530f.PNG",
     "static/media/rotating-card-bg-back.jpeg": "/static/media/rotating-card-bg-back.183088de91adb283a9ae.jpeg",
     "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
     "static/media/waves-white.svg": "/static/media/waves-white.dcb2ce8579b019d0f73a64c138dae945.svg",
@@ -35,15 +36,15 @@
     "static/media/photo1.jpg": "/static/media/photo1.6438b74a8c244c535bfe.jpg",
     "static/media/slide2.JPG": "/static/media/slide2.8562f8c8424d0c947f0c.JPG",
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
+    "static/media/Lider31.jpg": "/static/media/Lider31.7cfd5776674f6c6cea2b.jpg",
     "static/media/mainortho1.JPG": "/static/media/mainortho1.c0e8f07d0072514c7d77.JPG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
     "static/media/VR1.jpg": "/static/media/VR1.a8debc51a3f091bbc00f.jpg",
     "static/media/BIM2.jpg": "/static/media/BIM2.88b4d009ea7dbed1c1a2.jpg",
     "static/media/logo2.png": "/static/media/logo2.fe046cab280e11f30274.png",
     "static/media/logo1.png": "/static/media/logo1.23a5a8369a43f2c2cbad.png",
-    "static/media/Lider3.jpg": "/static/media/Lider3.80197dcf44417a14292d.jpg",
     "static/media/Transformer.jpg": "/static/media/Transformer.e61950eddab110e00bc7.jpg",
-    "static/media/hydro.jpg": "/static/media/hydro.ade7db18dcef70295c2f.jpg",
+    "static/media/hydro2.jpg": "/static/media/hydro2.f538c3073e048db60798.jpg",
     "static/media/slide1.JPG": "/static/media/slide1.4f1f473cb905764a5611.JPG",
     "static/media/slide4.JPG": "/static/media/slide4.dcb0df1605b7e6d8aef9.JPG",
     "static/media/vr2.jpg": "/static/media/vr2.89d90d46ed28f62dd421.jpg",
@@ -69,10 +70,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/index.html",
     "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.3d44241f.js.map": "/static/js/main.3d44241f.js.map"
+    "main.2381497f.js.map": "/static/js/main.2381497f.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.3d44241f.js"
+    "static/js/main.2381497f.js"
   ]
 }
