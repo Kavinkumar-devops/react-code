@@ -11,7 +11,8 @@ import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 // Image
 import post1 from "assets/f_images/BIM2.jpg";
-import post2 from "assets/f_images/ortho1.jpg";
+// import post2 from "assets/f_images/ortho1.jpg";
+import post2 from "assets/ortho/mainortho1.JPG";
 import post3 from "assets/f_images/Lider3.jpg";
 import post4 from "assets/images/examples/blog2.jpg";
 import post5 from "assets/f_images/map.jpg";

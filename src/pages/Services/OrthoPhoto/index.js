@@ -61,11 +61,11 @@ function AboutUs() {
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
-            rgba(gradients.dark.main, 0.6),
-            rgba(gradients.dark.state, 0.6)
+            rgba(gradients.dark.main, 0.2), // Reduced opacity to make the image clearer
+            rgba(gradients.dark.state, 0.2)
           )}, url(${bgImages[currentImage]})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundSize: "cover", // Ensures the image covers the entire area
+        backgroundPosition: "center", // Centers the image
         display: "grid",
         placeItems: "center",
       }}
