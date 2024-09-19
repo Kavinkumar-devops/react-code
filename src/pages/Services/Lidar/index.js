@@ -23,12 +23,18 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
-import bgImage from "assets/image/3DVisualization.PNG";
-import bgImage1 from "assets/image/1.PNG";
+import bgImage1 from "assets/lider/slide/slide1.PNG";
+import bgImage2 from "assets/lider/slide/slide2.PNG";
+import bgImage3 from "assets/lider/slide/slide3.PNG";
+import bgImage4 from "assets/lider/slide/slide4.JPG";
+import bgImage5 from "assets/lider/slide/slide5.PNG";
 
 const bgImages = [
-  bgImage,
-  bgImage1
+  bgImage1,
+  bgImage2,
+  bgImage3,
+  bgImage4,
+  bgImage5
 ];
 
 function AboutUs() {
@@ -88,9 +94,9 @@ function AboutUs() {
           >
             LiDAR
           </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+          {/* <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
           Point Cloud Classification - DTM - DSM -Vegetation and Forestry Analysis
-          </MKTypography>
+          </MKTypography> */}
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Start Reading
             </MKButton>
@@ -118,7 +124,7 @@ function AboutUs() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -12,
+          mt: -3,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}

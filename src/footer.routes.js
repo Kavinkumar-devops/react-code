@@ -134,12 +134,12 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/sections/lider/features"
+              to="/sections/VR"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
             >
-              Lidar
+              VR
             </MKTypography>
           ),
         },
@@ -147,12 +147,25 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/sections/photogrammetry/features"
+              to="/sections/orthophoto/features"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
             >
-              Photogrammetry
+              OrthoPhoto
+            </MKTypography>
+          ),
+        },
+        { 
+          name: (
+            <MKTypography
+              component={Link}
+              to="/sections/lider/features"
+              variant="button"
+              fontWeight="regular"
+              textTransform="capitalize"
+            >
+              Lidar
             </MKTypography>
           ),
         },
@@ -173,12 +186,12 @@ export default {
           name: (
             <MKTypography
               component={Link}
-              to="/sections/orthophoto/features"
+              to="/sections/photogrammetry/features"
               variant="button"
               fontWeight="regular"
               textTransform="capitalize"
             >
-              OrthoPhoto
+              Photogrammetry
             </MKTypography>
           ),
         },
