@@ -47,7 +47,7 @@ function AboutUs() {
         <BaseLayout
       // title="Design & Build with BIM"
       breadcrumb={[
-        { label: "Home",, route: "/sections/BIM2/features" },
+        { label: "Home", route: "/sections/BIM2/features" },
         { label: "BIM" },
       ]}
     >
@@ -127,7 +127,7 @@ function AboutUs() {
         <Information />
         {/* <Team /> */}
         {/* <Featuring /> */}
-        <Newsletter />
+        {/* <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

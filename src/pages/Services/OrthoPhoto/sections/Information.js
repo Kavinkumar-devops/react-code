@@ -154,11 +154,11 @@ function Information() {
             <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
               <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
               </MKTypography>
-          <MKBox display="flex" alignItems="center" mb={2}>
-          {/* <MKTypography variant="h4" fontWeight="bold">
+          {/* <MKBox display="flex" alignItems="center" mb={2}>
+          <MKTypography variant="h4" fontWeight="bold">
           Videoes
-          </MKTypography> */}
-        </MKBox>
+          </MKTypography>
+        </MKBox> */}
     </MKBox>
   );
 }

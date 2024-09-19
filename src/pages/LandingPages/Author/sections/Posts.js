@@ -13,14 +13,14 @@ import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 import post1 from "assets/f_images/BIM2.jpg";
 // import post2 from "assets/f_images/ortho1.jpg";
 import post2 from "assets/ortho/mainortho1.JPG";
-import post3 from "assets/f_images/Lider3.jpg";
+import post3 from "assets/f_images/Lider31.jpg";
 import post4 from "assets/images/examples/blog2.jpg";
 import post5 from "assets/f_images/map.jpg";
-import post6 from "assets/f_images/mobilemapping.PNG";
+import post6 from "assets/f_images/mobilemapping1.PNG";
 import post7 from "assets/f_images/photo1.jpg";
 import post8 from "assets/f_images/corridor.jpg";
 import post9 from "assets/f_images/dtm.jpg";
-import post10 from "assets/f_images/hydro.jpg";
+import post10 from "assets/f_images/hydro2.jpg";
 import post11 from "assets/f_images/planimetric.jpg";
 import MKBadge from "components/MKBadge";
 const description1 = `BN-GeoSpacial specializes in delivering cutting-edge Geospatial, Engineering, and BIM solutions with a team of highly skilled professionals and industry experts.`;
@@ -68,7 +68,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
-              title="Ortho Photo Services"
+              title="OrthoPhoto"
               description="At BN-Geospatial, we specialize in creating high-precision orthoimages through advanced orthorectification processes. Orthorectification is essential for correcting geometric distortions..."
               action={{
                 type: "internal",
@@ -81,7 +81,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post3}
-              title="Lidar"
+              title="LiDAR"
               description="At BN-Geospatial, we specialize in delivering cutting-edge LiDAR (Light Detection and Ranging) services, providing our clients with precise and actionable geospatial data...."
               action={{
                 type: "internal",
