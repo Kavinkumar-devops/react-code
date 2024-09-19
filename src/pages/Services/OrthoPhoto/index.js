@@ -23,12 +23,16 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
-import bgImage from "assets/image/3DVisualization.PNG";
-import bgImage1 from "assets/image/1.PNG";
+import bgImage1 from "assets/ortho/slide/slide2.JPG";
+import bgImage2 from "assets/ortho/slide/slide3.JPG";
+import bgImage3 from "assets/ortho/slide/slide4.JPG";
+import bgImage4 from "assets/ortho/slide/slide1.JPG";
 
 const bgImages = [
-  bgImage,
-  bgImage1
+  bgImage1,
+  bgImage2,
+  bgImage3,
+  bgImage4
 ];
 
 function AboutUs() {
@@ -115,18 +119,18 @@ function AboutUs() {
       </Container>
     </MKBox>
       <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -12,
-          mb: 4,
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
+          sx={{
+            p: 2,
+            mx: { xs: 2, lg: 3 },
+            mt: -5,
+            mb: 4,
+            boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          }}
+        >
         <Information />
         {/* <Team /> */}
         {/* <Featuring /> */}
-        <Newsletter />
+        {/* <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

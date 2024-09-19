@@ -14,10 +14,11 @@ import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 
 import TransparentBlogCard from "./TransparentBlogCard/index";
 // Image
-import post1 from "assets/image/mobile_mapping.png";
-import post2 from "assets/image/mobile_mapping.jpg";
-import post3 from "assets/image/mm1.jpeg";
-import post4 from "assets/f_images/mobilemapping.PNG";
+import post1 from "assets/ortho/flight1.png";
+import post2 from "assets/ortho/flight2.png";
+import post3 from "assets/ortho/edit2.PNG";
+import post4 from "assets/ortho/forest2.PNG";
+import post5 from "assets/ortho/SeamEditing.PNG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
@@ -154,9 +155,9 @@ function Information() {
               <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
               </MKTypography>
           <MKBox display="flex" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+          {/* <MKTypography variant="h4" fontWeight="bold">
           Videoes
-          </MKTypography>
+          </MKTypography> */}
         </MKBox>
     </MKBox>
   );
