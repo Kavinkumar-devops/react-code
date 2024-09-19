@@ -121,7 +121,7 @@ function AboutUs() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -12,
+          mt: -5,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
