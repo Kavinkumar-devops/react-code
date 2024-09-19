@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.514fe927.js",
+    "main.js": "/static/js/main.1eb739c9.js",
     "static/media/AVR_GIF.gif": "/static/media/AVR_GIF.489e98e61d70b6bcfa62.gif",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
     "static/media/aboutus.jpg": "/static/media/aboutus.4fcb56b1233fa42c8275.jpg",
     "static/media/drone_mapping3.png": "/static/media/drone_mapping3.d9afcc2ce05f6bed43fb.png",
+    "static/media/forest2.PNG": "/static/media/forest2.e6414d917b7d3ade2558.PNG",
     "static/media/SeamEditing.PNG": "/static/media/SeamEditing.751c6338012e30429c0c.PNG",
     "static/media/photogramettry2.jpg": "/static/media/photogramettry2.11226e3059c273858587.jpg",
     "static/media/Bim15.jpg": "/static/media/Bim15.e084aa8b3800fb8d7321.jpg",
@@ -16,8 +17,11 @@
     "static/media/corridor.jpg": "/static/media/corridor.47fece992db73053b531.jpg",
     "static/media/1.PNG": "/static/media/1.9460b60b90af701f8705.PNG",
     "static/media/vr4.jpg": "/static/media/vr4.b3e987cae318b8687a93.jpg",
+    "static/media/flight2.png": "/static/media/flight2.1de8a37a0a912ff1f7b8.png",
     "static/media/2.PNG": "/static/media/2.4a994ab9ed93ac0a987b.PNG",
+    "static/media/flight1.png": "/static/media/flight1.41446d54294bff90064e.png",
     "static/media/interiors 1.PNG": "/static/media/interiors 1.2256ab5addc8faf003d6.PNG",
+    "static/media/edit2.PNG": "/static/media/edit2.dc4edc17b56bfd49a2d0.PNG",
     "static/media/worksticker.png": "/static/media/worksticker.e66328e65960633c00de.png",
     "static/media/GIT.png": "/static/media/GIT.08ce0e548980f4a7a173.png",
     "static/media/contactus-logo1.png": "/static/media/contactus-logo1.8dd1c21e11df604560c2.png",
@@ -30,6 +34,7 @@
     "static/media/ortho1.jpg": "/static/media/ortho1.bcc5047c9240f31802eb.jpg",
     "static/media/4.PNG": "/static/media/4.4a9e226f9b1338bed2bf.PNG",
     "static/media/photo1.jpg": "/static/media/photo1.6438b74a8c244c535bfe.jpg",
+    "static/media/slide2.JPG": "/static/media/slide2.8562f8c8424d0c947f0c.JPG",
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
     "static/media/VR1.jpg": "/static/media/VR1.a8debc51a3f091bbc00f.jpg",
@@ -39,10 +44,13 @@
     "static/media/Lider3.jpg": "/static/media/Lider3.80197dcf44417a14292d.jpg",
     "static/media/Transformer.jpg": "/static/media/Transformer.e61950eddab110e00bc7.jpg",
     "static/media/hydro.jpg": "/static/media/hydro.ade7db18dcef70295c2f.jpg",
+    "static/media/slide1.JPG": "/static/media/slide1.4f1f473cb905764a5611.JPG",
+    "static/media/slide4.JPG": "/static/media/slide4.dcb0df1605b7e6d8aef9.JPG",
     "static/media/vr2.jpg": "/static/media/vr2.89d90d46ed28f62dd421.jpg",
     "static/media/GasPlant.jpg": "/static/media/GasPlant.1b9b868d06cfacfa8260.jpg",
     "static/media/BIM3.jpg": "/static/media/BIM3.93b98791cec018e20a56.jpg",
     "static/media/dtm.jpg": "/static/media/dtm.abc8c58a06f790d1b9d3.jpg",
+    "static/media/slide3.JPG": "/static/media/slide3.3e5cf3ea257af9c38794.JPG",
     "static/media/map.jpg": "/static/media/map.daf3aa2c4f2dcf230aad.jpg",
     "static/media/mobile_mapping.jpg": "/static/media/mobile_mapping.b23f942eef1dbfb88635.jpg",
     "static/media/mm1.jpeg": "/static/media/mm1.22b843f46248903a7fb2.jpeg",
@@ -61,10 +69,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/index.html",
     "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.514fe927.js.map": "/static/js/main.514fe927.js.map"
+    "main.1eb739c9.js.map": "/static/js/main.1eb739c9.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.514fe927.js"
+    "static/js/main.1eb739c9.js"
   ]
 }
