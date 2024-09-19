@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.1eb739c9.js",
+    "main.js": "/static/js/main.3d44241f.js",
     "static/media/AVR_GIF.gif": "/static/media/AVR_GIF.489e98e61d70b6bcfa62.gif",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
@@ -31,11 +31,11 @@
     "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
     "static/media/waves-white.svg": "/static/media/waves-white.dcb2ce8579b019d0f73a64c138dae945.svg",
     "static/media/blog2.jpg": "/static/media/blog2.aba7a3cb94805e9557d1.jpg",
-    "static/media/ortho1.jpg": "/static/media/ortho1.bcc5047c9240f31802eb.jpg",
     "static/media/4.PNG": "/static/media/4.4a9e226f9b1338bed2bf.PNG",
     "static/media/photo1.jpg": "/static/media/photo1.6438b74a8c244c535bfe.jpg",
     "static/media/slide2.JPG": "/static/media/slide2.8562f8c8424d0c947f0c.JPG",
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
+    "static/media/mainortho1.JPG": "/static/media/mainortho1.c0e8f07d0072514c7d77.JPG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
     "static/media/VR1.jpg": "/static/media/VR1.a8debc51a3f091bbc00f.jpg",
     "static/media/BIM2.jpg": "/static/media/BIM2.88b4d009ea7dbed1c1a2.jpg",
@@ -69,10 +69,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/index.html",
     "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.1eb739c9.js.map": "/static/js/main.1eb739c9.js.map"
+    "main.3d44241f.js.map": "/static/js/main.3d44241f.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.1eb739c9.js"
+    "static/js/main.3d44241f.js"
   ]
 }
