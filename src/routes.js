@@ -47,12 +47,12 @@ const routes = [
         component: <Features7 />,
       },
       {
-        name: "Orthophoto",
+        name: "OrthoPhoto",
         route: "/sections/orthophoto/features",
         component: <Features5 />,
       },
       {
-        name: "Lidar",
+        name: "LiDAR",
         route: "/sections/lider/features",
         component: <Features3 />,
       },
