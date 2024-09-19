@@ -23,12 +23,15 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
-import bgImage from "assets/image/3DVisualization.PNG";
-import bgImage1 from "assets/image/1.PNG";
-
+import bgImage1 from "assets/photog/slide/slide1.JPG";
+import bgImage2 from "assets/photog/slide/slide2.JPG";
+import bgImage3 from "assets/photog/slide/slide3.JPG";
+import bgImage4 from "assets/photog/slide/slide4.JPG";
 const bgImages = [
-  bgImage,
-  bgImage1
+  bgImage1,
+  bgImage2,
+  bgImage3,
+  bgImage4
 ];
 
 function AboutUs() {

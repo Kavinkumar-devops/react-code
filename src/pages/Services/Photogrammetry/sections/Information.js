@@ -14,10 +14,10 @@ import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 
 import TransparentBlogCard from "./TransparentBlogCard/index";
 // Image
-import post1 from "assets/image/mobile_mapping.png";
-import post2 from "assets/image/mobile_mapping.jpg";
-import post3 from "assets/image/mm1.jpeg";
-import post4 from "assets/f_images/mobilemapping.PNG";
+import post1 from "assets/photog/photog7.JPG";
+import post2 from "assets/photog/photog2.JPG";
+import post3 from "assets/photog/photog6.JPG";
+import post4 from "assets/photog/photog8.JPG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
