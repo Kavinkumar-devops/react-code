@@ -195,6 +195,32 @@ export default {
             </MKTypography>
           ),
         },
+        { 
+          name: (
+            <MKTypography
+              component={Link}
+              to="/sections/3DModelling/features"
+              variant="button"
+              fontWeight="regular"
+              textTransform="capitalize"
+            >
+              3D Modelling
+            </MKTypography>
+          ),
+        },
+        { 
+          name: (
+            <MKTypography
+              component={Link}
+              to="/sections/GIS/features"
+              variant="button"
+              fontWeight="regular"
+              textTransform="capitalize"
+            >
+              GIS
+            </MKTypography>
+          ),
+        },
       ],
     },
     {

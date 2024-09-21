@@ -14,7 +14,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/Services/GIS/sections/Information";
+import Information from "./sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "./sections/Newsletter";
@@ -23,11 +23,11 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
-import bgImage from "assets/image/GIS4.jpeg";
-import bgImage1 from "assets/image/GIS1.png";
-
+import bgImage1 from "assets/3dmodelling/3D.jpg";
+import bgImage2 from "assets/3dmodelling/3D12.jpg";
 const bgImages = [
-  bgImage
+  bgImage1,
+  bgImage2
 ];
 
 function AboutUs() {
@@ -46,8 +46,8 @@ function AboutUs() {
         <BaseLayout
       // title="Design & Build with BIM"
       breadcrumb={[
-        { label: "Home", route: "/sections/GIS/features" },
-        { label: "GIS" },
+        { label: "Home", route: "/" },
+        { label: "Photogrammetry" },
       ]}
     >
     <MKBox
@@ -85,12 +85,31 @@ function AboutUs() {
               },
             })}
           >
-            GIS ( QGIS AND ArcGIS )
+            3D MODELLING
           </MKTypography>
           {/* <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-            have the opportunity to play this game
+          3D MODELLING - PLANIMETRIC Mapping - DTM Mapping - CORRIDOR Mapping - HYDRO Mapping
           </MKTypography> */}
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+              Start Reading
+            </MKButton>
+          <MKTypography variant="h6" color="white" mt={8} mb={1}>
+            Find us on
+          </MKTypography>
+          <MKBox display="flex" justifyContent="center" alignItems="center">
+            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <i className="fab fa-facebook" />
+            </MKTypography>
+            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <i className="fab fa-instagram" />
+            </MKTypography>
+            <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <i className="fab fa-twitter" />
+            </MKTypography>
+            <MKTypography component="a" variant="body1" color="white" href="#">
+              <i className="fab fa-google-plus" />
+            </MKTypography>
+          </MKBox> */}
         </Grid>
       </Container>
     </MKBox>

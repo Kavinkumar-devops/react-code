@@ -21,24 +21,21 @@ import post4 from "assets/photog/photog8.JPG";
 // D&M React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-const description1 = `At BN-Geospatial, we offer a comprehensive suite of GIS services utilizing advanced tools like QGIS and ArcGIS. Our expertise enables us to deliver high-value solutions to local, state, and federal agencies, town planners, architects, and utility companies.`;
-const description3 = `BN-Geospatial offers a comprehensive suite of GIS services designed to meet the diverse needs of our clients, including:`;
-const description4 = `&nbsp;&nbsp;Vector Georeferencing: Align vector data accurately to real-world coordinates for precise mapping using QGIS and ArcGIS.`;
-const description5 = `&nbsp;&nbsp;Parcel Mapping: Create detailed parcel maps that aid in land management and planning.`;
-const description6 = `&nbsp;&nbsp;Utility Mapping: Identify and document utility infrastructure for efficient resource management.`;
-const description7 = `&nbsp;&nbsp;Cadastral Mapping: Develop comprehensive maps that reflect property boundaries and ownership.`;
-const description8 = `&nbsp;&nbsp;Digitization/Drafting: Transform paper maps and drawings into digital formats for improved accessibility.`;
-const description9 = `&nbsp;&nbsp;Land Use & Land Cover Mapping: Analyze and visualize land usage patterns for informed planning using both QGIS and ArcGIS tools.`;
-const description10 = `&nbsp;&nbsp;Thematic Mapping: Generate maps that highlight specific themes or attributes for targeted analysis.`;
-const description11 = `&nbsp;&nbsp;Data Collection/Data Entry: Efficiently gather and input data to maintain up-to-date GIS databases.`;
-const description12 = `&nbsp;&nbsp;GIS Conversion/Migration/Maintenance: Transition and maintain GIS data seamlessly across different platforms.`;
-const description13 = `&nbsp;&nbsp;Taxation Mapping: Support taxation assessments with accurate mapping of property values and boundaries.`;
+const description1 = `At BN-Geospatial, we provide innovative 3D modeling and laser scanning solutions that enhance project outcomes. Our skilled team employs state-of-the-art technology to deliver accurate and detailed models, forming a strong foundation for effective decision-making in design and construction`;
+const description2 = `Terrestrial Photogrammetry involves capturing high-resolution images from elevated ground-based stations. Unlike traditional photogrammetry, where the camera may move or adjust angles, this method ensures the camera remains stationary during image capture. This approach allows for precise modeling of small-scale areas, making it ideal for detailed analysis of structures, terrains, and other specific features.`;
+const description3 = `BN-Geospatial offers a comprehensive suite of 3D Modelling services designed to meet the diverse needs of our clients, including:`;
+const description4 = `&nbsp;&nbsp;As-Built 3D Models: Accurately capture the characteristics of existing structures, ensuring reliability in renovations and modifications`;
+const description5 = `&nbsp;&nbsp;3D Models from 2D Drawings: Transform your 2D plans into dynamic 3D visuals for improved understanding and analysis.`;
+const description6 = `&nbsp;&nbsp;2D Plan Extraction: Streamline your processes by converting existing plans into digital formats.`;
+const description7 = `&nbsp;&nbsp;Laser Scanning: Leverage advanced laser technology for rapid, precise data collection, capturing intricate details.`;
+const description8 = `&nbsp;&nbsp;PDMS: Develop sophisticated 3D models for complex industrial and commercial applications.`;
+const description9 = `&nbsp;&nbsp;Sculpture Models: Realize artistic projects with high-detail 3D representations that bring your ideas to life.`;
 function Information() {
   return (
     <MKBox component="section" py={2}>
           <MKBox display="flex" alignItems="center" mb={2}>
             <MKTypography variant="h4" fontWeight="bold">
-            GIS Services with QGIS and ArcGIS
+            3D Modelling and Laser Scanning Services
             </MKTypography>
           </MKBox>
               <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -76,7 +73,7 @@ function Information() {
             </Grid> */}
             <MKBox display="flex" alignItems="center"  mb={2}>
           <MKTypography variant="h4" fontWeight="bold">
-          Our Offerings
+          Our Services
           </MKTypography>
           </MKBox>
               <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
@@ -130,56 +127,6 @@ function Information() {
               </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
                 <p dangerouslySetInnerHTML={{ __html: description8 }}></p>
-                </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">bolt</Icon>
-                  </MKBox>
-              </MKBox>
-                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
-                <p dangerouslySetInnerHTML={{ __html: description9 }}></p>
-                </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">bolt</Icon>
-                  </MKBox>
-              </MKBox>
-                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
-                <p dangerouslySetInnerHTML={{ __html: description10 }}></p>
-                </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">bolt</Icon>
-                  </MKBox>
-              </MKBox>
-                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
-                <p dangerouslySetInnerHTML={{ __html: description11 }}></p>
-                </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">bolt</Icon>
-                  </MKBox>
-              </MKBox>
-                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
-                <p dangerouslySetInnerHTML={{ __html: description12 }}></p>
-                </MKTypography>
-            </MKBox>
-            <MKBox display="flex"  p={1}>
-              <MKBox pl={4}>
-                  <MKBox pl={0}>
-                    <Icon fontSize="small">bolt</Icon>
-                  </MKBox>
-              </MKBox>
-                <MKTypography variant="body2" component="p" color="text" mb={2} pr={1}>
-                <p dangerouslySetInnerHTML={{ __html: description13 }}></p>
                 </MKTypography>
             </MKBox>
             <MKBox display="flex"  p={1}>
