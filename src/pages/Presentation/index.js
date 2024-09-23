@@ -41,6 +41,7 @@ import bgImage4 from "assets/image/Bim15.jpg";
 // import bgImage5 from "assets/image/GIS1.png";
 import Posts from "pages/LandingPages/Author/sections/Posts";
 import { keyframes } from "@mui/system";
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
 
 // Define the keyframes for sliding the background from right to left
 const slideBackground = keyframes`
@@ -191,6 +192,7 @@ function Presentation() {
         <Newsletter />
         {/* <Pages/> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

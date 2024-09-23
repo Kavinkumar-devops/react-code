@@ -25,6 +25,7 @@ import { Alert } from "react-bootstrap";
 import MKAlert from "components/MKAlert";
 import CircularProgress from "@mui/material/CircularProgress";
 import TextField from "@mui/material/TextField";
+import ScrollToTopButton from "pages/ScrollToTopButton/ScrollToTopButton";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -287,6 +288,7 @@ function ContactUs() {
         </Grid>   
         </Container>
       </Grid>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

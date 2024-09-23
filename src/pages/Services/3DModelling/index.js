@@ -25,6 +25,7 @@ import footerRoutes from "footer.routes";
 // Image
 import bgImage1 from "assets/3dmodelling/3D.jpg";
 import bgImage2 from "assets/3dmodelling/3D12.jpg";
+import ScrollToTopButton from '../../ScrollToTopButton/ScrollToTopButton';
 const bgImages = [
   bgImage1,
   bgImage2
@@ -127,6 +128,7 @@ function AboutUs() {
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

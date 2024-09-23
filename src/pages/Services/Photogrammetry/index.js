@@ -22,6 +22,7 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
+import ScrollToTopButton from '../../ScrollToTopButton/ScrollToTopButton';
 // Image
 import bgImage1 from "assets/photog/slide/slide1.JPG";
 import bgImage2 from "assets/photog/slide/slide2.JPG";
@@ -131,6 +132,7 @@ function AboutUs() {
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

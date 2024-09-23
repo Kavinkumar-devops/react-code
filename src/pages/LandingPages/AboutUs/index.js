@@ -1,5 +1,5 @@
 // @mui material components
-
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -17,6 +17,7 @@ import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import ScrollToTopButton from '../../ScrollToTopButton/ScrollToTopButton';
 
 // Routes
 import routes from "routes";
@@ -24,6 +25,7 @@ import footerRoutes from "footer.routes";
 // Image
 // import bgImage from "assets/images/bg-about-us.jpg";
 import bgImage from "assets/images/aboutus.jpg";
+
 
 function AboutUs() {
   return (
@@ -100,6 +102,7 @@ function AboutUs() {
         <Featuring />
         <Newsletter /> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

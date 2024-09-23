@@ -1,0 +1,28 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;  /* Increased bottom margin for more space */
+    right: 30px;   /* Increased right margin for more space */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .scroll-button {
+    background-color: #e1bf02; /* Updated to a vibrant color */
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding for a larger button */
+    border-radius: 31%; /* Circle button */
+    cursor: pointer;
+    font-size: 20px; /* Slightly larger font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for better visibility */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover transition */
+  }
+  
+  .scroll-button:hover {
+    background-color: #fae372; /* Darker shade on hover */
+    transform: translateY(-5px); /* Button "lift" effect on hover */
+  }
+  
+  .scroll-button:focus {
+    outline: none;
+  }
+  

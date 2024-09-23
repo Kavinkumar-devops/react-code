@@ -25,7 +25,7 @@ import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/image/GIS4.jpeg";
 import bgImage1 from "assets/image/GIS1.png";
-
+import ScrollToTopButton from '../../ScrollToTopButton/ScrollToTopButton';
 const bgImages = [
   bgImage
 ];
@@ -108,6 +108,7 @@ function AboutUs() {
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

@@ -25,6 +25,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 // Image
 import videoSrc1 from "assets/bim/BIM.mp4";
+import ScrollToTopButton from '../../ScrollToTopButton/ScrollToTopButton';
 
 
 function AboutUs() {
@@ -125,6 +126,7 @@ function AboutUs() {
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>
+      <ScrollToTopButton/>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
