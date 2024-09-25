@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { useState } from "react";
 // react-router components
 import { Link } from "react-router-dom";
@@ -17,7 +19,16 @@ import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarD
 function DefaultNavbarMobile({ routes, open }) {
   const [collapse, setCollapse] = useState("");
 
-  const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
+  // const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
+  // const handleSetCollapse =() =>('');
+  const handleSetCollapse = (name) => {
+    if (name === 'Services') {
+      return collapse === name ? setCollapse(false) : setCollapse(name);
+    } else {
+      return ''; // For any other name, do nothing or return an empty string
+    }
+  };
+  
 
   const renderNavbarItems = routes.map(
     ({ name, icon, collapse: routeCollapses, href, route, collapse: navCollapse }) => (

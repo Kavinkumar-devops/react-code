@@ -31,8 +31,6 @@ const routes = [
     icon: <RoofingIcon fontSize="medium" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/",
     component: <Presentation />,
-    columns: 1,
-    rowsPerColumn: 2,
   },
   {
     name: "Services",
@@ -113,17 +111,12 @@ const routes = [
     icon: <MdOutlineContactSupport size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/about-us",
     component: <AboutUs />,
-    // component: <UnderDevelopment fontSize="medium" sx={{ fontWeight: 'bold' }} color="black" />,
-    columns: 1,
-    rowsPerColumn: 2,
   },
   {
     name: "Contact Us",
     icon: <MdOutlineConnectWithoutContact size="23px" sx={{ fontWeight: 'bold' }} color="black"/>,
     route: "/pages/landing-pages/contact-us",
     component: <ContactUs />,
-    columns: 1,
-    rowsPerColumn: 2,
   },
 ];
 
