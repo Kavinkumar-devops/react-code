@@ -27,7 +27,7 @@ function DefaultFooter({ content }) {
               </Link>
               <MKTypography variant="h6">{brand.name}</MKTypography>
             </MKBox>
-            {/* <MKBox display="flex" alignItems="center" mt={3}>
+            <MKBox display="flex" alignItems="center" mt={3}>
               {socials.map(({ icon, link }, key) => (
                 <MKTypography
                   key={link}
@@ -38,12 +38,12 @@ function DefaultFooter({ content }) {
                   variant="h5"
                   color="dark"
                   opacity={0.8}
-                  mr={key === socials.length - 1 ? 0 : 2.5}
+                  mr={key === socials.length - 1 ? 0 : 3.5}
                 >
                   {icon}
                 </MKTypography>
               ))}
-            </MKBox> */}
+            </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
             <Grid key={title} item xs={6} md={2} sx={{ mb: 1 }}>
