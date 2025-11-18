@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a92945eb.css",
-    "main.js": "/static/js/main.a9c2f812.js",
+    "main.js": "/static/js/main.8a0e951b.js",
     "static/media/AVR_GIF.gif": "/static/media/AVR_GIF.489e98e61d70b6bcfa62.gif",
     "static/media/mmvideo.mp4": "/static/media/mmvideo.53cbcca2f982e2419c82.mp4",
     "static/media/rotating-card-bg-front.jpeg": "/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
+    "static/media/c.jpg": "/static/media/c.25e23a74abe67ecf9fce.jpg",
     "static/media/aboutus.jpg": "/static/media/aboutus.4fcb56b1233fa42c8275.jpg",
     "static/media/BIM.mp4": "/static/media/BIM.924f37356b83eb39e664.mp4",
     "static/media/33.jpg": "/static/media/33.b3a3e18f3e1639b19aa5.jpg",
@@ -20,6 +21,7 @@
     "static/media/3DVisualization.PNG": "/static/media/3DVisualization.71c48aa35cdd7ab1b9aa.PNG",
     "static/media/slide3.PNG": "/static/media/slide3.bb83fc95e379efba304a.PNG",
     "static/media/mobile_mapping.png": "/static/media/mobile_mapping.a732c60c470b6815a296.png",
+    "static/media/corridor.jpg": "/static/media/corridor.47fece992db73053b531.jpg",
     "static/media/1.PNG": "/static/media/1.9460b60b90af701f8705.PNG",
     "static/media/vr4.jpg": "/static/media/vr4.b3e987cae318b8687a93.jpg",
     "static/media/flight2.png": "/static/media/flight2.1de8a37a0a912ff1f7b8.png",
@@ -37,7 +39,6 @@
     "static/media/mobilemapping.PNG": "/static/media/mobilemapping.dc4e5d6b9faaa42a056b.PNG",
     "static/media/11.PNG": "/static/media/11.54449d40b8312e7b7342.PNG",
     "static/media/vr31.jpg": "/static/media/vr31.515975803240a07e89fc.jpg",
-    "static/media/mobilemapping1.PNG": "/static/media/mobilemapping1.540031dd07a1888b530f.PNG",
     "static/media/photog8.JPG": "/static/media/photog8.d5708066e2fa88c0de37.JPG",
     "static/media/rotating-card-bg-back.jpeg": "/static/media/rotating-card-bg-back.183088de91adb283a9ae.jpeg",
     "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
@@ -45,14 +46,12 @@
     "static/media/GIS4.jpeg": "/static/media/GIS4.01c9a213129069bd1224.jpeg",
     "static/media/photog7.JPG": "/static/media/photog7.9a12ee4e97a78b03aba7.JPG",
     "static/media/blog2.jpg": "/static/media/blog2.aba7a3cb94805e9557d1.jpg",
+    "static/media/ortho1.jpg": "/static/media/ortho1.bcc5047c9240f31802eb.jpg",
     "static/media/4.PNG": "/static/media/4.4a9e226f9b1338bed2bf.PNG",
-    "static/media/post1.JPG": "/static/media/post1.4cb103fe3cb12b2c34b1.JPG",
     "static/media/slide4.JPG": "/static/media/slide4.dcb0df1605b7e6d8aef9.JPG",
-    "static/media/post1.jpg": "/static/media/post1.ecc9e1af5f9342c6b3ae.jpg",
+    "static/media/photo1.jpg": "/static/media/photo1.6438b74a8c244c535bfe.jpg",
     "static/media/3.PNG": "/static/media/3.04bf6e3662ab05619ccd.PNG",
-    "static/media/Lider31.jpg": "/static/media/Lider31.7cfd5776674f6c6cea2b.jpg",
     "static/media/photog2.JPG": "/static/media/photog2.19947c29e036da83ae14.JPG",
-    "static/media/mainortho1.JPG": "/static/media/mainortho1.c0e8f07d0072514c7d77.JPG",
     "static/media/planimetric.jpg": "/static/media/planimetric.4b1009d57f95ecb6a1db.jpg",
     "static/media/VR1.jpg": "/static/media/VR1.a8debc51a3f091bbc00f.jpg",
     "static/media/BIM2.jpg": "/static/media/BIM2.88b4d009ea7dbed1c1a2.jpg",
@@ -60,15 +59,16 @@
     "static/media/slide3.JPG": "/static/media/slide3.3e5cf3ea257af9c38794.JPG",
     "static/media/logo2.png": "/static/media/logo2.fe046cab280e11f30274.png",
     "static/media/logo1.png": "/static/media/logo1.23a5a8369a43f2c2cbad.png",
-    "static/media/GIS5.jpeg": "/static/media/GIS5.a7705961678b475bfff6.jpeg",
+    "static/media/Lider3.jpg": "/static/media/Lider3.80197dcf44417a14292d.jpg",
     "static/media/Transformer.jpg": "/static/media/Transformer.e61950eddab110e00bc7.jpg",
+    "static/media/hydro.jpg": "/static/media/hydro.ade7db18dcef70295c2f.jpg",
     "static/media/photog6.JPG": "/static/media/photog6.64bd5397f4433d06469f.JPG",
     "static/media/vr2.jpg": "/static/media/vr2.89d90d46ed28f62dd421.jpg",
-    "static/media/3D21.jpg": "/static/media/3D21.b25601fbe12135507852.jpg",
     "static/media/GasPlant.jpg": "/static/media/GasPlant.1b9b868d06cfacfa8260.jpg",
     "static/media/BIM3.jpg": "/static/media/BIM3.93b98791cec018e20a56.jpg",
     "static/media/3D12.jpg": "/static/media/3D12.a71cb5c6e4717094201c.jpg",
     "static/media/slide2.PNG": "/static/media/slide2.9c454aab4dd017b528cf.PNG",
+    "static/media/dtm.jpg": "/static/media/dtm.abc8c58a06f790d1b9d3.jpg",
     "static/media/photo2.PNG": "/static/media/photo2.abe7e27823b4aab51f8b.PNG",
     "static/media/map.jpg": "/static/media/map.daf3aa2c4f2dcf230aad.jpg",
     "static/media/mobile_mapping.jpg": "/static/media/mobile_mapping.b23f942eef1dbfb88635.jpg",
@@ -90,10 +90,10 @@
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/index.html",
     "main.a92945eb.css.map": "/static/css/main.a92945eb.css.map",
-    "main.a9c2f812.js.map": "/static/js/main.a9c2f812.js.map"
+    "main.8a0e951b.js.map": "/static/js/main.8a0e951b.js.map"
   },
   "entrypoints": [
     "static/css/main.a92945eb.css",
-    "static/js/main.a9c2f812.js"
+    "static/js/main.8a0e951b.js"
   ]
 }
