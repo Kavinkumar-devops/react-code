@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable prettier/prettier */
+import Popup from "./Popup";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -42,6 +43,7 @@ import bgImage4 from "assets/image/Bim15.jpg";
 import Posts from "pages/LandingPages/Author/sections/Posts";
 import { keyframes } from "@mui/system";
 import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
+import cImage from "./c.jpg";
 
 // Define the keyframes for sliding the background from right to left
 const slideBackground = keyframes`
@@ -97,8 +99,17 @@ function Presentation() {
     return () => clearSlideInterval(); // Clean up on component unmount
   }, []);
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
+
   return (
     <>
+      {showPopup && (
+        <Popup image={cImage} onClose={() => setShowPopup(false)} />
+      )}
       <DefaultNavbar
         routes={routes}
         // transparent
