@@ -19,6 +19,25 @@ export default function Popup({ onClose, image }) {
                     }}
                 />
                 </a>
+                {/* CONTACT US BUTTON */}
+                <button
+                    onClick={() => (window.location.href = "mailto:kian@bngeospatial.com")}
+                    style={{
+                        margin: "20px auto 0",
+                        padding: "12px 20px",
+                        backgroundColor: "#02a7ffff",
+                        color: "white",
+                        border: "none",
+                        borderRadius: "8px",
+                        cursor: "pointer",
+                        width: "fit-content",      // ⬅ Adjusts to text width
+                        maxWidth: "80%",           // ⬅ Prevents too wide on mobile
+                        whiteSpace: "nowrap",      // ⬅ Prevents Contact/Us split
+                        display: "block",
+                    }}
+                >
+                    Contact Us
+                </button>
             </div>
         </div>
     );

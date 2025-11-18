@@ -55,7 +55,7 @@ function AboutUs() {
       // title="LIDER"
       breadcrumb={[
         { label: "Home", route: "/" },
-        { label: "LIDER" },
+        { label: "LIDAR" },
       ]}
     >
     <MKBox
