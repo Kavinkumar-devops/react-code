@@ -6,8 +6,8 @@ export default function Popup({ onClose, image }) {
         <div style={styles.overlay}>
             <div style={styles.popup}>
                 <button style={styles.closeBtn} onClick={onClose}>✕</button>
-                {/* <a href="/pages/landing-pages/contact-us"> */}
-                <a href="mailto:kian@bngeospatial.com">
+                <a href="/pages/landing-pages/contact-us">
+                {/* <a href="mailto:kian@bngeospatial.com"> */}
                 <img
                     src={image}
                     alt="popup"
@@ -21,7 +21,8 @@ export default function Popup({ onClose, image }) {
                 </a>
                 {/* CONTACT US BUTTON */}
                 <button
-                    onClick={() => (window.location.href = "mailto:kian@bngeospatial.com")}
+                    //onClick={() => (window.location.href = "mailto:kian@bngeospatial.com")}
+                    onClick={() => window.location.href = "/pages/landing-pages/contact-us"}
                     style={{
                         margin: "20px auto 0",
                         padding: "12px 20px",
