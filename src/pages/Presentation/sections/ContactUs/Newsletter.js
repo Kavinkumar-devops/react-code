@@ -42,14 +42,24 @@ function Newsletter() {
   // Validation rules
   const validate = () => {
     let tempErrors = {};
+
     tempErrors.firstname = formData.firstname ? "" : "First name is required";
     tempErrors.lastname = formData.lastname ? "" : "Last name is required";
+
     tempErrors.email = /\S+@\S+\.\S+/.test(formData.email)
       ? ""
       : "Email is not valid";
-    tempErrors.phone = formData.phone.length === 10
-      ? ""
-      : "Phone number must be 10 digits";
+
+    // Phone number: 10 to 20 digits allowed
+    if (formData.phone.length < 8) {
+      tempErrors.phone = "Phone number must be at least 8 digits";
+    } else if (formData.phone.length > 20) {
+      tempErrors.phone = "Phone number cannot exceed 20 digits";
+    } else {
+      tempErrors.phone = "";
+    }
+
+    // Message validation
     tempErrors.message =
       formData.message.length >= 10
         ? ""
