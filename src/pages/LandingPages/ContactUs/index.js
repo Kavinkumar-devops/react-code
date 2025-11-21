@@ -81,19 +81,19 @@ function ContactUs() {
       : "Email is not valid";
 
     // Phone number: 10 to 20 digits allowed
-    if (formData.phone.length < 8) {
-      tempErrors.phone = "Phone number must be at least 8 digits";
-    } else if (formData.phone.length > 20) {
-      tempErrors.phone = "Phone number cannot exceed 20 digits";
-    } else {
-      tempErrors.phone = "";
-    }
+    // if (formData.phone.length < 8) {
+    //   tempErrors.phone = "Phone number must be at least 8 digits";
+    // } else if (formData.phone.length > 20) {
+    //   tempErrors.phone = "Phone number cannot exceed 20 digits";
+    // } else {
+    //   tempErrors.phone = "";
+    // }
 
     // Message validation
-    tempErrors.message =
-      formData.message.length >= 10
-        ? ""
-        : "Message should be at least 10 characters long";
+    // tempErrors.message =
+    //   formData.message.length >= 10
+    //     ? ""
+    //     : "Message should be at least 10 characters long";
 
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
@@ -110,33 +110,52 @@ function ContactUs() {
      setLoading(true); // Start loading when form is submitted
  
 
-  try {
-    const response = await axios.post("https://mail-latest.onrender.com/send-email", formData);
-    
-    if (response.status === 200) {
+    try {
+      const form = new FormData();
+      form.append("firstname", formData.firstname);
+      form.append("lastname", formData.lastname);
+      form.append("email", formData.email);
+      form.append("phone", formData.phone);
+      form.append("message", formData.message);
+
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbyc2Jcq9TMERXagcOrBJasu9L8WwJLbpqmZScYsoiOGmfO7rn842O8C7EMcfjGj29qT/exec",
+        form,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data"   // <-- important
+          }
+        }
+      );
+
       console.log("Response:", response.data);
 
-      // Show success alert
-      setSuccess(true);
+      if (response.data === "success") {
+        setSuccess(true);
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
 
-      // Clear form fields after success
-      setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
+        setTimeout(() => setSuccess(false), 3000);
+      } else {
+        setFailure(true);
+        setTimeout(() => setFailure(false), 3000);
+      }
 
-      // Hide the success alert after 5 seconds
-      setTimeout(() => setSuccess(false), 3000);
+    } catch (error) {
+      console.error("Error:", error);
+      setFailure(true);
+      setTimeout(() => setFailure(false), 3000);
+
+    } finally {
+      setLoading(false);
     }
-  } catch (error) {
-    setFailure(true);
-    setTimeout(() => setFailure(false), 3000);
-  }finally {
-    setLoading(false); // Set loading to false when the request completes
-  }
+
+
 };
 
   return (
